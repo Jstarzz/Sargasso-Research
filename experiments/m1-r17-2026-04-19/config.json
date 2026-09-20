@@ -1,0 +1,9 @@
+{
+  "record_type": "research configuration summary",
+  "complete_reproduction_config": false,
+  "configuration": {
+    "delta": "Learning rate reduced to 5e-5",
+    "lineage": "See source record; dates and round IDs preserved as recorded."
+  },
+  "missing_information": "Unrecorded settings must not be inferred; restricted inputs and training implementation are not distributed."
+}

@@ -1,0 +1,2076 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "early-design",
+      "date": "2026-03-28",
+      "title": "Initial research design",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "provenance",
+      "summary": "Historical PROJECT revision table dates initial design to March 28; earliest surviving Git commit is March 30. Design date is documentary, not a commit timestamp.",
+      "evidence": [
+        {
+          "source_path": "PROJECT.md",
+          "sha256": "22c1e757bf4d7f44e8c731b211046428f4060490970c7fa022f9f7121b0fe999",
+          "commit": "940cd3f",
+          "summary": "Historical PROJECT revision table dates initial design to March 28; earliest surviving Git commit is March 30. Design date is documentary, not a commit timestamp.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "earliest-commit",
+      "date": "2026-03-30",
+      "title": "Earliest retained project commit",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "provenance",
+      "summary": "Git history begins at 2321bc6; no earlier experiment results are established by this release.",
+      "evidence": [
+        {
+          "source_path": "PROJECT.md",
+          "sha256": "cdea4094158b4fae082ed1668db341ef26a668e24e3f1d6ecf9828c546c66d1a",
+          "commit": "2321bc6",
+          "summary": "Git history begins at 2321bc6; no earlier experiment results are established by this release.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "preprocessing-generation",
+      "date": "2026-04-12",
+      "title": "Spectral preprocessing generation",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "methodology",
+      "summary": "Preprocessing introduced band handling, floating-algae indices, cloud masks and patches; numerical-stability fixes followed.",
+      "evidence": [
+        {
+          "source_path": "PROJECT.md",
+          "sha256": "055c6d74395cfe2a33e6218b5b367e8ffc0d69a38ca50879a1a7e7977eeb40c1",
+          "commit": "7c224c3",
+          "summary": "Preprocessing introduced band handling, floating-algae indices, cloud masks and patches; numerical-stability fixes followed.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "three-index-b3",
+      "date": "2026-04-13",
+      "title": "Three-index EfficientNet-B3 lineage",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "model-change",
+      "summary": "FAI-only/older prototype descriptions gave way to FAI, AFAI and NDWI inputs with EfficientNet-B3. Older parallel lineages were later retired.",
+      "evidence": [
+        {
+          "source_path": "PROJECT.md",
+          "sha256": "7b232d671e16b6aaadbc0491cdb1ed4ef157d607cf36214293c7b1364504c2a5",
+          "commit": "236a743",
+          "summary": "FAI-only/older prototype descriptions gave way to FAI, AFAI and NDWI inputs with EfficientNet-B3. Older parallel lineages were later retired.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "early-diagnostics",
+      "date": "2026-04-17",
+      "title": "Early diagnostics and normalization redesign",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "methodology",
+      "summary": "Git records BCE/Tversky stabilization, train-only normalization, percentile clipping replacing z-scores, encoder freeze diagnostics, and a B0 regularization trial. Individual R1–R10 numbering cannot be reconstructed confidently from retained summaries.",
+      "evidence": [
+        {
+          "source_path": "PROJECT.md",
+          "sha256": "5c75a2bfec43c43c80c51b98fdc1a2b69413f3ec25688e3f67010017fee5e4d6",
+          "commit": "b163e60",
+          "summary": "Git records BCE/Tversky stabilization, train-only normalization, percentile clipping replacing z-scores, encoder freeze diagnostics, and a B0 regularization trial. Individual R1–R10 numbering cannot be reconstructed confidently from retained summaries.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "chronology-gaps",
+      "date": null,
+      "title": "Missing and reused round identifiers",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "provenance",
+      "summary": "No standalone completed records were found for Model 1 R12, R13, R27, R32 or R41. R40 appears as a plan; the subsequent full-data run is labeled R39. R39 and R47 labels are reused. These gaps are not invented experiments or proof of ongoing training.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "No standalone completed records were found for Model 1 R12, R13, R27, R32 or R41. R40 appears as a plan; the subsequent full-data run is labeled R39. R39 and R47 labels are reused. These gaps are not invented experiments or proof of ongoing training.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [],
+      "date_note": "Exact experiment date not established in retained records; positioned by documented lineage."
+    },
+    {
+      "id": "m1-r11-reversion",
+      "date": "2026-04-18",
+      "title": "Model 1 R11: revert B0 and heavy augmentation",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Historical PROJECT revision 7 and commit 940cd3f explicitly record R11 returning to B3 and flips with weight decay 0.0005. No authenticated final metric is transcribed.",
+      "evidence": [
+        {
+          "source_path": "PROJECT.md",
+          "sha256": "22c1e757bf4d7f44e8c731b211046428f4060490970c7fa022f9f7121b0fe999",
+          "commit": "940cd3f",
+          "summary": "Historical PROJECT revision 7 and commit 940cd3f explicitly record R11 returning to B3 and flips with weight decay 0.0005. No authenticated final metric is transcribed.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r11-reversion"
+      ],
+      "experiment_path": "experiments/m1-r11-reversion/experiment.json"
+    },
+    {
+      "id": "m1-r14-baseline",
+      "date": null,
+      "title": "Model 1 R14 baseline",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Baseline recorded at the start of the tuning log; B3, three-index inputs, BCE/Tversky, positive weight 10, percentile normalization and 30 epochs.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Baseline recorded at the start of the tuning log; B3, three-index inputs, BCE/Tversky, positive weight 10, percentile normalization and 30 epochs.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r14-baseline"
+      ],
+      "date_note": "Exact experiment date not established in retained records; positioned by documented lineage.",
+      "experiment_path": "experiments/m1-r14-baseline/experiment.json"
+    },
+    {
+      "id": "m1-r15-2026-04-18",
+      "date": "2026-04-18",
+      "title": "Model 1 R15: Rotation augmentation",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Rotation augmentation. Historical disposition: reverted.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Rotation augmentation. Historical disposition: reverted.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r15-2026-04-18"
+      ],
+      "experiment_path": "experiments/m1-r15-2026-04-18/experiment.json"
+    },
+    {
+      "id": "m1-r19-2026-04-18",
+      "date": "2026-04-18",
+      "title": "Model 1 R19: Random resized crop",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Random resized crop. Historical disposition: reverted.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Random resized crop. Historical disposition: reverted.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r19-2026-04-18"
+      ],
+      "experiment_path": "experiments/m1-r19-2026-04-18/experiment.json"
+    },
+    {
+      "id": "m1-r16-2026-04-19",
+      "date": "2026-04-19",
+      "title": "Model 1 R16: BCE weight reduced to 0.3",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "BCE weight reduced to 0.3. Historical disposition: discard.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "BCE weight reduced to 0.3. Historical disposition: discard.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r16-2026-04-19"
+      ],
+      "experiment_path": "experiments/m1-r16-2026-04-19/experiment.json"
+    },
+    {
+      "id": "m1-r17-2026-04-19",
+      "date": "2026-04-19",
+      "title": "Model 1 R17: Learning rate reduced to 5e-5",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Learning rate reduced to 5e-5. Historical disposition: reverted.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Learning rate reduced to 5e-5. Historical disposition: reverted.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r17-2026-04-19"
+      ],
+      "experiment_path": "experiments/m1-r17-2026-04-19/experiment.json"
+    },
+    {
+      "id": "m1-r18-2026-04-19",
+      "date": "2026-04-19",
+      "title": "Model 1 R18: Learning rate raised to 3e-4",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Learning rate raised to 3e-4. Historical disposition: discard.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Learning rate raised to 3e-4. Historical disposition: discard.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r18-2026-04-19"
+      ],
+      "experiment_path": "experiments/m1-r18-2026-04-19/experiment.json"
+    },
+    {
+      "id": "m1-r20-2026-04-19",
+      "date": "2026-04-19",
+      "title": "Model 1 R20: Decoder dropout 0.2",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Decoder dropout 0.2. Historical disposition: discard.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Decoder dropout 0.2. Historical disposition: discard.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r20-2026-04-19"
+      ],
+      "experiment_path": "experiments/m1-r20-2026-04-19/experiment.json"
+    },
+    {
+      "id": "m1-r21-2026-04-19",
+      "date": "2026-04-19",
+      "title": "Model 1 R21: Tversky alpha/beta 0.2/0.8",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Tversky alpha/beta 0.2/0.8. Historical disposition: discard.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Tversky alpha/beta 0.2/0.8. Historical disposition: discard.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r21-2026-04-19"
+      ],
+      "experiment_path": "experiments/m1-r21-2026-04-19/experiment.json"
+    },
+    {
+      "id": "m1-r22-2026-04-20",
+      "date": "2026-04-20",
+      "title": "Model 1 R22: Positive-patch threshold reduced to 0.002",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Positive-patch threshold reduced to 0.002. Historical disposition: kept.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Positive-patch threshold reduced to 0.002. Historical disposition: kept.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r22-2026-04-20"
+      ],
+      "experiment_path": "experiments/m1-r22-2026-04-20/experiment.json"
+    },
+    {
+      "id": "m1-r23-2026-04-20",
+      "date": "2026-04-20",
+      "title": "Model 1 R23: Training extended to 60 epochs",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Training extended to 60 epochs. Historical disposition: KEPT .",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Training extended to 60 epochs. Historical disposition: KEPT .",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r23-2026-04-20"
+      ],
+      "experiment_path": "experiments/m1-r23-2026-04-20/experiment.json"
+    },
+    {
+      "id": "m1-r24-2026-04-20",
+      "date": "2026-04-20",
+      "title": "Model 1 R24: Dropout on expanded 60-epoch baseline",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Dropout on expanded 60-epoch baseline. Historical disposition: discard.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Dropout on expanded 60-epoch baseline. Historical disposition: discard.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r24-2026-04-20"
+      ],
+      "experiment_path": "experiments/m1-r24-2026-04-20/experiment.json"
+    },
+    {
+      "id": "m1-r25-2026-04-20",
+      "date": "2026-04-20",
+      "title": "Model 1 R25: EfficientNet-B2 encoder",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "EfficientNet-B2 encoder. Historical disposition: discard.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "EfficientNet-B2 encoder. Historical disposition: discard.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r25-2026-04-20"
+      ],
+      "experiment_path": "experiments/m1-r25-2026-04-20/experiment.json"
+    },
+    {
+      "id": "m1-r26-2026-04-20",
+      "date": "2026-04-20",
+      "title": "Model 1 R26: Rotation on expanded 60-epoch baseline",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Rotation on expanded 60-epoch baseline. Historical disposition: KEPT .",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Rotation on expanded 60-epoch baseline. Historical disposition: KEPT .",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r26-2026-04-20"
+      ],
+      "experiment_path": "experiments/m1-r26-2026-04-20/experiment.json"
+    },
+    {
+      "id": "m1-r35-2026-04-20",
+      "date": "2026-04-20",
+      "title": "Model 1 R35: Small MADOS addition",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Small MADOS addition. Historical disposition: discard.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Small MADOS addition. Historical disposition: discard.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r35-2026-04-20"
+      ],
+      "experiment_path": "experiments/m1-r35-2026-04-20/experiment.json"
+    },
+    {
+      "id": "m1-r28-2026-04-21",
+      "date": "2026-04-21",
+      "title": "Model 1 R28: Training extended to 90 epochs",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Training extended to 90 epochs. Historical disposition: discard.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Training extended to 90 epochs. Historical disposition: discard.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r28-2026-04-21"
+      ],
+      "experiment_path": "experiments/m1-r28-2026-04-21/experiment.json"
+    },
+    {
+      "id": "m1-r29-2026-04-21",
+      "date": "2026-04-21",
+      "title": "Model 1 R29: Positive-patch threshold reduced to 0.001",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Positive-patch threshold reduced to 0.001. Historical disposition: discard.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Positive-patch threshold reduced to 0.001. Historical disposition: discard.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r29-2026-04-21"
+      ],
+      "experiment_path": "experiments/m1-r29-2026-04-21/experiment.json"
+    },
+    {
+      "id": "m1-r30-2026-04-21",
+      "date": "2026-04-21",
+      "title": "Model 1 R30: Weight decay 1e-4; early strategy stop",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Weight decay 1e-4; early strategy stop. Stopped before intended training completion; partial metrics deliberately withheld.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Weight decay 1e-4; early strategy stop. Stopped before intended training completion; partial metrics deliberately withheld.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r30-2026-04-21"
+      ],
+      "experiment_path": "experiments/m1-r30-2026-04-21/experiment.json"
+    },
+    {
+      "id": "m1-r31-2026-04-21",
+      "date": "2026-04-21",
+      "title": "Model 1 R31: Five raw spectral bands instead of three indices",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Five raw spectral bands instead of three indices. Historical disposition: discard.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Five raw spectral bands instead of three indices. Historical disposition: discard.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r31-2026-04-21"
+      ],
+      "experiment_path": "experiments/m1-r31-2026-04-21/experiment.json"
+    },
+    {
+      "id": "m1-r33-2026-04-23",
+      "date": "2026-04-23",
+      "title": "Model 1 R33: Split investigation; historical stratification wording later corrected",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Split investigation; historical stratification wording later corrected. Historical disposition: discard.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Split investigation; historical stratification wording later corrected. Historical disposition: discard.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r33-2026-04-23"
+      ],
+      "experiment_path": "experiments/m1-r33-2026-04-23/experiment.json"
+    },
+    {
+      "id": "m1-r34-2026-04-23",
+      "date": "2026-04-23",
+      "title": "Model 1 R34: Weighted sampling",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Weighted sampling. Historical disposition: discard.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Weighted sampling. Historical disposition: discard.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r34-2026-04-23"
+      ],
+      "experiment_path": "experiments/m1-r34-2026-04-23/experiment.json"
+    },
+    {
+      "id": "m1-r36-2026-04-24",
+      "date": "2026-04-24",
+      "title": "Model 1 R36: MADOS removal and early stopping",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "MADOS removal and early stopping. Historical disposition: kept early stopping logic; investigation ongoing.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "MADOS removal and early stopping. Historical disposition: kept early stopping logic; investigation ongoing.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r36-2026-04-24"
+      ],
+      "experiment_path": "experiments/m1-r36-2026-04-24/experiment.json"
+    },
+    {
+      "id": "m1-r37-2026-04-24",
+      "date": "2026-04-24",
+      "title": "Model 1 R37: Repair of masked positive pixels",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Repair of masked positive pixels. Historical disposition: KEPT .",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Repair of masked positive pixels. Historical disposition: KEPT .",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r37-2026-04-24"
+      ],
+      "experiment_path": "experiments/m1-r37-2026-04-24/experiment.json"
+    },
+    {
+      "id": "positive-mask-repair",
+      "date": "2026-04-24",
+      "title": "Positive pixels erased by water masking",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "milestone",
+      "summary": "Investigation reported 99.3% of sargassum-labeled pixels had been made NaN. Preserving floating-algae candidates before strict water masking restored learnable positives; R37 followed.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Investigation reported 99.3% of sargassum-labeled pixels had been made NaN. Preserving floating-algae candidates before strict water masking restored learnable positives; R37 followed.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "phase2-data-generation",
+      "date": "2026-04-25",
+      "title": "Data-generation Phase 2 Run 1",
+      "status": "completed",
+      "scope": "Research data pipeline",
+      "category": "milestone",
+      "summary": "An initial data-generation run was interrupted by detached-process/logging issues. It was not a training experiment; incomplete processing counts and projections are deliberately withheld.",
+      "experiment_ids": [],
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "An initial data-generation run was interrupted by detached-process/logging issues. It was not a training experiment; incomplete processing counts and projections are deliberately withheld.",
+          "source_revision_note": "Working source snapshot hash identifies exact bytes; commit is last tracked context only."
+        }
+      ]
+    },
+    {
+      "id": "expanded-mask-revert",
+      "date": "2026-04-26",
+      "title": "Refine the water-mask repair",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "milestone",
+      "summary": "Expanded mask was later reverted at the patch-water gate; adaptive thresholding retained recovery of algae outside strict water classification. This supersedes the initial April 24 implementation description.",
+      "evidence": [
+        {
+          "source_path": "CLAUDE.md",
+          "sha256": "f42447e49f9145da5dd508d5c9a3c1c91e52738fa165a910d4d34f09103c4e32",
+          "commit": "4e8f35582323e52de597b484cc64c04e96dbba2a",
+          "summary": "Expanded mask was later reverted at the patch-water gate; adaptive thresholding retained recovery of algae outside strict water classification. This supersedes the initial April 24 implementation description.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "m1-r38-2026-04-27",
+      "date": "2026-04-27",
+      "title": "Model 1 R38: Expanded dataset and positive weight 3.7",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Expanded dataset and positive weight 3.7. Historical disposition: KEPT .",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Expanded dataset and positive weight 3.7. Historical disposition: KEPT .",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r38-2026-04-27"
+      ],
+      "experiment_path": "experiments/m1-r38-2026-04-27/experiment.json"
+    },
+    {
+      "id": "m1-r39-2026-04-28",
+      "date": "2026-04-28",
+      "title": "Model 1 R39: Warm-restart/focal experiment",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Warm-restart/focal experiment. Historical disposition: discard scheduler, KEEP focal_gamma.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Warm-restart/focal experiment. Historical disposition: discard scheduler, KEEP focal_gamma.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r39-2026-04-28"
+      ],
+      "experiment_path": "experiments/m1-r39-2026-04-28/experiment.json"
+    },
+    {
+      "id": "m1-r39-2026-05-11",
+      "date": "2026-05-11",
+      "title": "Model 1 R39: Full-dataset smooth-cosine baseline",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Full-dataset smooth-cosine baseline. Historical disposition: KEPT.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Full-dataset smooth-cosine baseline. Historical disposition: KEPT.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r39-2026-05-11"
+      ],
+      "experiment_path": "experiments/m1-r39-2026-05-11/experiment.json"
+    },
+    {
+      "id": "triage-normalization",
+      "date": "2026-05-12",
+      "title": "Triage normalization parity",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "milestone",
+      "summary": "Triage was corrected to use the training percentile normalization. Earlier visual diagnostics may have used a mismatched input transformation.",
+      "evidence": [
+        {
+          "source_path": "CLAUDE.md",
+          "sha256": "f42447e49f9145da5dd508d5c9a3c1c91e52738fa165a910d4d34f09103c4e32",
+          "commit": "4e8f35582323e52de597b484cc64c04e96dbba2a",
+          "summary": "Triage was corrected to use the training percentile normalization. Earlier visual diagnostics may have used a mismatched input transformation.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "m1-r42-2026-05-15",
+      "date": "2026-05-15",
+      "title": "Model 1 R42: Filtered 17,447-patch training set; warm resume",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Filtered 17,447-patch training set; warm resume. Historical disposition: KEPT.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Filtered 17,447-patch training set; warm resume. Historical disposition: KEPT.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r42-2026-05-15"
+      ],
+      "experiment_path": "experiments/m1-r42-2026-05-15/experiment.json"
+    },
+    {
+      "id": "m1-r43-2026-05-16",
+      "date": "2026-05-16",
+      "title": "Model 1 R43: Pseudo-label mixing 0.25 with conservative thresholds",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Pseudo-label mixing 0.25 with conservative thresholds. Historical disposition: KEPT .",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Pseudo-label mixing 0.25 with conservative thresholds. Historical disposition: KEPT .",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r43-2026-05-16"
+      ],
+      "experiment_path": "experiments/m1-r43-2026-05-16/experiment.json"
+    },
+    {
+      "id": "per-scene-scoring",
+      "date": "2026-05-16",
+      "title": "Per-scene evaluation correction",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "milestone",
+      "summary": "Evaluation CSV changed from batch-level rows to true scene-level tracking; historical count was 173 scenes. Later split audit found 174, an unresolved historical artifact discrepancy.",
+      "evidence": [
+        {
+          "source_path": "CLAUDE.md",
+          "sha256": "f42447e49f9145da5dd508d5c9a3c1c91e52738fa165a910d4d34f09103c4e32",
+          "commit": "4e8f35582323e52de597b484cc64c04e96dbba2a",
+          "summary": "Evaluation CSV changed from batch-level rows to true scene-level tracking; historical count was 173 scenes. Later split audit found 174, an unresolved historical artifact discrepancy.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "m1-r44-2026-05-17",
+      "date": "2026-05-17",
+      "title": "Model 1 R44: Exclude 28 low-label scenes",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Exclude 28 low-label scenes. Historical disposition: KEPT .",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Exclude 28 low-label scenes. Historical disposition: KEPT .",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r44-2026-05-17"
+      ],
+      "experiment_path": "experiments/m1-r44-2026-05-17/experiment.json"
+    },
+    {
+      "id": "m1-r45-2026-05-17",
+      "date": "2026-05-17",
+      "title": "Model 1 R45: Updated pseudo-labels and exclusions; extended warm resume",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Updated pseudo-labels and exclusions; extended warm resume. Historical disposition: discard .",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Updated pseudo-labels and exclusions; extended warm resume. Historical disposition: discard .",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r45-2026-05-17"
+      ],
+      "experiment_path": "experiments/m1-r45-2026-05-17/experiment.json"
+    },
+    {
+      "id": "physics-v1",
+      "date": "2026-05-17",
+      "title": "Physics generation 1: centroid matching",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "milestone",
+      "summary": "Wind-only Lagrangian advection and windage sweeps established a centroid-distance baseline; raw current and Stokes additions did not consistently improve this protocol.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Wind-only Lagrangian advection and windage sweeps established a centroid-distance baseline; raw current and Stokes additions did not consistently improve this protocol.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "physics-v2",
+      "date": "2026-05-18",
+      "title": "Physics generation 2: constrained matching",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "milestone",
+      "summary": "Size-weighted one-to-one assignment replaced nearest-neighbor matching, reducing many-to-one optimism. Its distance metrics are not directly interchangeable with raster IoU.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Size-weighted one-to-one assignment replaced nearest-neighbor matching, reducing many-to-one optimism. Its distance metrics are not directly interchangeable with raster IoU.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "afai-coastal-validation",
+      "date": "2026-05-19",
+      "title": "AFAI coastal-overlap evaluation",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "milestone",
+      "summary": "Satellite AFAI coastal-overlap evaluation expanded from 120 scorable pairs to 193 after recovering small-blob source coverage. Recorded full-coverage recall was 126/193 (65.3%). This is satellite proxy overlap with broad spatial tolerance, not verified beach-arrival recall or calibrated warning accuracy.",
+      "experiment_ids": [],
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Satellite AFAI coastal-overlap evaluation expanded from 120 scorable pairs to 193 after recovering small-blob source coverage. Recorded full-coverage recall was 126/193 (65.3%). This is satellite proxy overlap with broad spatial tolerance, not verified beach-arrival recall or calibrated warning accuracy.",
+          "source_revision_note": "Working source snapshot hash identifies exact bytes; commit is last tracked context only."
+        }
+      ]
+    },
+    {
+      "id": "m1-r46-2026-05-19",
+      "date": "2026-05-19",
+      "title": "Model 1 R46: Remove pseudo-labels and expand exclusions",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Remove pseudo-labels and expand exclusions. Historical disposition: KEPT .",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Remove pseudo-labels and expand exclusions. Historical disposition: KEPT .",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r46-2026-05-19"
+      ],
+      "experiment_path": "experiments/m1-r46-2026-05-19/experiment.json"
+    },
+    {
+      "id": "m1-r47-2026-05-19",
+      "date": "2026-05-19",
+      "title": "Model 1 R47: May attempt; distinct from June rerun",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "May attempt; distinct from June rerun. Historical disposition: discard .",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Scene exclusion warm resume; distinct from earlier same-number run. Historical disposition: discard .",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r47-2026-05-19"
+      ],
+      "experiment_path": "experiments/m1-r47-2026-05-19/experiment.json"
+    },
+    {
+      "id": "physics-v3",
+      "date": "2026-05-19",
+      "title": "Physics generation 3: raster overlap",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "milestone",
+      "summary": "Pixel-seeded particles and KDE overlap became the spatial metric; minimum-bandwidth repair changed proxy recall substantially. Coastal detection proxies are not independent beach-arrival truth.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Pixel-seeded particles and KDE overlap became the spatial metric; minimum-bandwidth repair changed proxy recall substantially. Coastal detection proxies are not independent beach-arrival truth.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "m2-r01",
+      "date": "2026-05-20",
+      "title": "Model 2 R1: Initial 38K-parameter residual CNN",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "159 train / 39 validation pairs; small validation Dice improvement but overfit.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "159 train / 39 validation pairs; small validation Dice improvement but overfit.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r01"
+      ],
+      "experiment_path": "experiments/m2-r01/experiment.json"
+    },
+    {
+      "id": "m2-r02",
+      "date": "2026-05-20",
+      "title": "Model 2 R2: Smaller 10K-parameter correction",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "Base channels 16; smaller model improved development hindcast overlap.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Base channels 16; smaller model improved development hindcast overlap.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r02"
+      ],
+      "experiment_path": "experiments/m2-r02/experiment.json"
+    },
+    {
+      "id": "m2-r03",
+      "date": "2026-05-20",
+      "title": "Model 2 R3: Flip augmentation",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "Sign-corrected flips underperformed; geographic wind symmetry assumption was unsuitable.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Sign-corrected flips underperformed; geographic wind symmetry assumption was unsuitable.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r03"
+      ],
+      "experiment_path": "experiments/m2-r03/experiment.json"
+    },
+    {
+      "id": "m2-r04",
+      "date": "2026-05-20",
+      "title": "Model 2 R4: Wind-noise augmentation",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "Superseded by horizon specialization. Original prose incorrectly called 0.9343 better than 0.9325; lower loss makes it worse.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Superseded by horizon specialization. Original prose incorrectly called 0.9343 better than 0.9325; lower loss makes it worse.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r04"
+      ],
+      "experiment_path": "experiments/m2-r04/experiment.json"
+    },
+    {
+      "id": "m2-r05",
+      "date": "2026-05-20",
+      "title": "Model 2 R5: 48-hour-only specialization",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "95 training / 18 validation pairs; restrict correction to two-day horizon.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "95 training / 18 validation pairs; restrict correction to two-day horizon.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r05"
+      ],
+      "experiment_path": "experiments/m2-r05/experiment.json"
+    },
+    {
+      "id": "m2-r06",
+      "date": "2026-05-20",
+      "title": "Model 2 R6: Mixed-horizon heavy regularization",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "Intended three-day-only run actually admitted all horizons up to three days; did not replace specialized correction.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Intended three-day-only run actually admitted all horizons up to three days; did not replace specialized correction.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r06"
+      ],
+      "experiment_path": "experiments/m2-r06/experiment.json"
+    },
+    {
+      "id": "m2-r07",
+      "date": "2026-05-20",
+      "title": "Model 2 R7: 48-hour specialization plus wind noise",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "Development gains motivated subsequent current-channel experiment.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Development gains motivated subsequent current-channel experiment.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r07"
+      ],
+      "experiment_path": "experiments/m2-r07/experiment.json"
+    },
+    {
+      "id": "m2-r08",
+      "date": "2026-05-20",
+      "title": "Model 2 R8: Five-channel wind and current correction",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "32 base channels; physics probability, two wind and two current channels; development hindcast improved despite worse validation loss than R7.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "32 base channels; physics probability, two wind and two current channels; development hindcast improved despite worse validation loss than R7.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r08"
+      ],
+      "experiment_path": "experiments/m2-r08/experiment.json"
+    },
+    {
+      "id": "m2-r09",
+      "date": "2026-05-20",
+      "title": "Model 2 R9: Add Stokes drift",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "Validation loss improved but median hindcast overlap regressed; not promoted.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Validation loss improved but median hindcast overlap regressed; not promoted.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r09"
+      ],
+      "experiment_path": "experiments/m2-r09/experiment.json"
+    },
+    {
+      "id": "m2-r10",
+      "date": "2026-05-20",
+      "title": "Model 2 R10: Mixed horizons with horizon channel",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "Early checkpoint and poor hindcast results; completed result supersedes historical TRAINING entry.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Early checkpoint and poor hindcast results; completed result supersedes historical TRAINING entry.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r10"
+      ],
+      "experiment_path": "experiments/m2-r10/experiment.json"
+    },
+    {
+      "id": "m2-r11",
+      "date": "2026-05-20",
+      "title": "Model 2 R11: Mixed training with two-day validation",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "Lower validation loss failed to translate to hindcast skill; completed result supersedes TRAINING entry.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Lower validation loss failed to translate to hindcast skill; completed result supersedes TRAINING entry.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r11"
+      ],
+      "experiment_path": "experiments/m2-r11/experiment.json"
+    },
+    {
+      "id": "m2-r12",
+      "date": "2026-05-20",
+      "title": "Model 2 R12: Expanded pairs with horizon channel",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "Expanded 116-pair source cohort did not improve end-to-end overlap.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Expanded 116-pair source cohort did not improve end-to-end overlap.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r12"
+      ],
+      "experiment_path": "experiments/m2-r12/experiment.json"
+    },
+    {
+      "id": "m2-r13",
+      "date": "2026-05-20",
+      "title": "Model 2 R13: Eight-channel Stokes/current/horizon model",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "Best validation loss among early runs but median overlap degraded; illustrates objective mismatch.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Best validation loss among early runs but median overlap degraded; illustrates objective mismatch.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r13"
+      ],
+      "experiment_path": "experiments/m2-r13/experiment.json"
+    },
+    {
+      "id": "model2-declaration",
+      "date": "2026-05-21",
+      "title": "Early Model 2 selection and coastal-risk separation",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "milestone",
+      "summary": "R8 was declared the selected correction after early negative ablations; neural correction hurt coastal proxy recall, motivating physics-based coastal-risk assessment. Later R16 and R18 selections superseded this declaration; it is not the current final model.",
+      "experiment_ids": [],
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "R8 was declared the selected correction after early negative ablations; neural correction hurt coastal proxy recall, motivating physics-based coastal-risk assessment. Later R16 and R18 selections superseded this declaration; it is not the current final model.",
+          "source_revision_note": "Working source snapshot hash identifies exact bytes; commit is last tracked context only."
+        }
+      ]
+    },
+    {
+      "id": "m2-r14",
+      "date": "2026-05-24",
+      "title": "Model 2 R14: Expanded two-day five-channel data",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "Hindcast mean 0.134 and median 0.092 below recorded R8 comparison; cohorts differ.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Hindcast mean 0.134 and median 0.092 below recorded R8 comparison; cohorts differ.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r14"
+      ],
+      "experiment_path": "experiments/m2-r14/experiment.json"
+    },
+    {
+      "id": "m2-r14b",
+      "date": "2026-05-24",
+      "title": "Model 2 R14b: Five-day correction attempt",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "400 detected pairs; near-unit loss at first selected epoch; no evidence supporting learned five-day correction.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "400 detected pairs; near-unit loss at first selected epoch; no evidence supporting learned five-day correction.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r14b"
+      ],
+      "experiment_path": "experiments/m2-r14b/experiment.json"
+    },
+    {
+      "id": "pilot-negative",
+      "date": "2026-05-25",
+      "title": "Cloud-adjusted acquisition lesson",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "milestone",
+      "summary": "A raw catalogue pair-count gate greatly overstated usable two-day pairs. Pilot produced six detected pairs against a planned 60-pair gate; later dry-season acquisition improved yield.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "A raw catalogue pair-count gate greatly overstated usable two-day pairs. Pilot produced six detected pairs against a planned 60-pair gate; later dry-season acquisition improved yield.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "m2-r15",
+      "date": "2026-05-27",
+      "title": "Model 2 R15: Sentinel-3 synthetic pixel proxies",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "5,000 one-day proxy pairs; 1,000 validation cases had zero median IoU for both physics and residual.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "5,000 one-day proxy pairs; 1,000 validation cases had zero median IoU for both physics and residual.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r15"
+      ],
+      "experiment_path": "experiments/m2-r15/experiment.json"
+    },
+    {
+      "id": "m2-r16",
+      "date": "2026-05-28",
+      "title": "Model 2 R16: Twenty-seed selection",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "Seed 1 selected; no independent confirmation because hindcast set was reused for selection.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Seed 1 selected; no independent confirmation because hindcast set was reused for selection.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r16"
+      ],
+      "experiment_path": "experiments/m2-r16/experiment.json"
+    },
+    {
+      "id": "m2-r17",
+      "date": "2026-05-29",
+      "title": "Model 2 R17: Geographic expansion and lower windage",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "255-pair cohort; all initial seeds net-negative; added sparse pairs degraded validation.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "255-pair cohort; all initial seeds net-negative; added sparse pairs degraded validation.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r17"
+      ],
+      "experiment_path": "experiments/m2-r17/experiment.json"
+    },
+    {
+      "id": "m2-r17b",
+      "date": "2026-05-30",
+      "title": "Model 2 R17b: Lower-windage seed sweep",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "May 29 five-channel sweep and May 30 eight-channel top-seed assessment share the R17b label; retain this ambiguity. Neither displaced prior selection.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "May 29 five-channel sweep and May 30 eight-channel top-seed assessment share the R17b label; retain this ambiguity. Neither displaced prior selection.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r17b"
+      ],
+      "experiment_path": "experiments/m2-r17b/experiment.json"
+    },
+    {
+      "id": "m2-r18",
+      "date": "2026-05-30",
+      "title": "Model 2 R18: Five-channel seed 11 selection",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "140 nominal two-day pairs; later records identify about 105 effective pairs. Selected from 20 seeds; exact 48-hour and more-than-10-km offshore scope.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "140 nominal two-day pairs; later records identify about 105 effective pairs. Selected from 20 seeds; exact 48-hour and more-than-10-km offshore scope.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r18"
+      ],
+      "experiment_path": "experiments/m2-r18/experiment.json"
+    },
+    {
+      "id": "m2-r19",
+      "date": "2026-05-30",
+      "title": "Model 2 R19: Mix synthetic OLCI proxies with real detections",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "200 proxy pairs added to 140 nominal real pairs; selected seeds failed to improve the evaluation pairs.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "200 proxy pairs added to 140 nominal real pairs; selected seeds failed to improve the evaluation pairs.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r19"
+      ],
+      "experiment_path": "experiments/m2-r19/experiment.json"
+    },
+    {
+      "id": "m2-r20",
+      "date": "2026-05-31",
+      "title": "Model 2 R20: Real two- and three-day mixture",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "202 real pairs; 105 two-day and 97 three-day; mixed training degraded hindcast performance.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "202 real pairs; 105 two-day and 97 three-day; mixed training degraded hindcast performance.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r20"
+      ],
+      "experiment_path": "experiments/m2-r20/experiment.json"
+    },
+    {
+      "id": "m1-r47-2026-06-07",
+      "date": "2026-06-07",
+      "title": "Model 1 R47: June rerun; distinct from May attempt",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "June rerun; distinct from May attempt. Historical disposition: KEPT .",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Scene exclusion warm resume; distinct from earlier same-number run. Historical disposition: KEPT .",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r47-2026-06-07"
+      ],
+      "experiment_path": "experiments/m1-r47-2026-06-07/experiment.json"
+    },
+    {
+      "id": "m2-r21",
+      "date": "2026-06-08",
+      "title": "Model 2 R21: Horizon-conditioned mixed training",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "Six-channel, ten-seed experiment; none beat R18 and the best loss seed had poor hindcast overlap.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Six-channel, ten-seed experiment; none beat R18 and the best loss seed had poor hindcast overlap.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r21"
+      ],
+      "experiment_path": "experiments/m2-r21/experiment.json"
+    },
+    {
+      "id": "horizon-gate",
+      "date": "2026-06-09",
+      "title": "48-hour benefit and 72-hour degradation separated",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "milestone",
+      "summary": "Horizon-stratified R18 diagnostics led to an exact two-day correction gate. These results were later classified as development evidence, not confirmation.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Horizon-stratified R18 diagnostics led to an exact two-day correction gate. These results were later classified as development evidence, not confirmation.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "tta-ensemble",
+      "date": "2026-06-09",
+      "title": "Two-detector ensemble and four-pass TTA selected",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "milestone",
+      "summary": "R46/R47 mean probabilities with four flip passes and threshold 0.60 selected after test sweeps. Legacy-label score must not be compared directly with guarded-label scores.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "R46/R47 mean probabilities with four flip passes and threshold 0.60 selected after test sweeps. Legacy-label score must not be compared directly with guarded-label scores.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "gold-review",
+      "date": "2026-06-10",
+      "title": "Prediction-exposed gold review",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "milestone",
+      "summary": "Fifty selected scenes were reviewed; 28 were retained for the early gold subset. Reviewers saw predictions; later audit explicitly rejected independence and population-performance claims.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Fifty selected scenes were reviewed; 28 were retained for the early gold subset. Reviewers saw predictions; later audit explicitly rejected independence and population-performance claims.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "m1-landguard-benchmark",
+      "date": "2026-06-10",
+      "title": "Land-guarded detection benchmark",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Land-guarded labels plus masked R46/R47 ensemble and four-pass TTA at 0.60 yielded recorded IoU 0.6440; unmasked inference on guarded labels yielded 0.4692. Selection and threshold tuning reused test evidence.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Land-guarded labels plus masked R46/R47 ensemble and four-pass TTA at 0.60 yielded recorded IoU 0.6440; unmasked inference on guarded labels yielded 0.4692. Selection and threshold tuning reused test evidence.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-landguard-benchmark"
+      ],
+      "experiment_path": "experiments/m1-landguard-benchmark/experiment.json"
+    },
+    {
+      "id": "m1-r48-2026-06-10",
+      "date": "2026-06-10",
+      "title": "Model 1 R48: Warm resume on geometrically guarded labels",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Warm resume on geometrically guarded labels. Historical disposition: KEPT as checkpoint, NOT promoted .",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Warm resume on geometrically guarded labels. Historical disposition: KEPT as checkpoint, NOT promoted .",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r48-2026-06-10"
+      ],
+      "experiment_path": "experiments/m1-r48-2026-06-10/experiment.json"
+    },
+    {
+      "id": "m1-r49-2026-06-10",
+      "date": "2026-06-10",
+      "title": "Model 1 R49: Scratch training on guarded labels",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "experiment",
+      "summary": "Scratch training on guarded labels. Historical disposition: DISCARD .",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Scratch training on guarded labels. Historical disposition: DISCARD .",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m1-r49-2026-06-10"
+      ],
+      "experiment_path": "experiments/m1-r49-2026-06-10/experiment.json"
+    },
+    {
+      "id": "m2-r22",
+      "date": "2026-06-10",
+      "title": "Model 2 R22: Three-day specialist",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "97 three-day training pairs; 88 evaluable hindcasts; apparent gain not significant, so physics-only retained.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "97 three-day training pairs; 88 evaluable hindcasts; apparent gain not significant, so physics-only retained.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r22"
+      ],
+      "experiment_path": "experiments/m2-r22/experiment.json"
+    },
+    {
+      "id": "m2-r23",
+      "date": "2026-06-10",
+      "title": "Model 2 R23: Inference ensemble of R18 seeds",
+      "status": "completed",
+      "scope": "Model 2",
+      "category": "experiment",
+      "summary": "Three-seed median 0.1349 versus single 0.1195 on 71 reused cases; interval crossed zero; not promoted.",
+      "evidence": [
+        {
+          "source_path": "docs/tuning-log.md",
+          "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+          "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+          "summary": "Three-seed median 0.1349 versus single 0.1195 on 71 reused cases; interval crossed zero; not promoted.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-r23"
+      ],
+      "experiment_path": "experiments/m2-r23/experiment.json"
+    },
+    {
+      "id": "land-repair-completion",
+      "date": "2026-07-26",
+      "title": "Residual label-content drift repair",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "milestone",
+      "summary": "Twenty-four scenes had failed an earlier content round-trip check. Geometric repair of saved patches removed 9,727 inland positives from 18 train/validation scenes; test headline unchanged. R48 predates this repair.",
+      "evidence": [
+        {
+          "source_path": "docs/playbook.md",
+          "sha256": "807a42ededaa3873c3f350693f781e9635b73217cdefcea67d963361e90462a5",
+          "commit": "14ef21556cb7548694e3bf79db7d8d516c3fdd11",
+          "summary": "Twenty-four scenes had failed an earlier content round-trip check. Geometric repair of saved patches removed 9,727 inland positives from 18 train/validation scenes; test headline unchanged. R48 predates this repair.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "architecture-validity-review",
+      "date": "2026-07-29",
+      "title": "Scientific/runtime contract review",
+      "status": "completed",
+      "scope": "All models",
+      "category": "milestone",
+      "summary": "Review documented normalization, horizon, coastal gating and risk-publication requirements. Engineering implementation is separate from evidence of operational forecast skill.",
+      "evidence": [
+        {
+          "source_path": "docs/architecture-review-2026-07-29.md",
+          "sha256": "a1bb3b6bd6b07a1a8c220fdd3217aa70f2fe82193415ded9927c2769b21af26f",
+          "commit": "4c73abeceeb25adce3638031a0b73d8626b33852",
+          "summary": "Review documented normalization, horizon, coastal gating and risk-publication requirements. Engineering implementation is separate from evidence of operational forecast skill.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "landguard-parity-caveat",
+      "date": "2026-08-08",
+      "title": "Land-guard and historical replay caveats",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "milestone",
+      "summary": "Missing coastline asset could allow label generation without guard. Historical stored masks and strict-threshold scores were not equivalent by assumption to dynamic inference.",
+      "evidence": [
+        {
+          "source_path": "docs/playbook.md",
+          "sha256": "807a42ededaa3873c3f350693f781e9635b73217cdefcea67d963361e90462a5",
+          "commit": "14ef21556cb7548694e3bf79db7d8d516c3fdd11",
+          "summary": "Missing coastline asset could allow label generation without guard. Historical stored masks and strict-threshold scores were not equivalent by assumption to dynamic inference.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "model3-provisional-decision",
+      "date": "2026-08-08",
+      "title": "Model 3 v1 remains provisional",
+      "status": "completed",
+      "scope": "Model 3",
+      "category": "milestone",
+      "summary": "Model 3 v1 retained as provisional 48-hour physics-relative-density bands. Its calibration cohort selected future detections and target-date locations; it cannot establish independent beaching probabilities, negative base rate or operational coverage.",
+      "experiment_ids": [],
+      "evidence": [
+        {
+          "source_path": "docs/decisions/model3-v1-provisional.md",
+          "sha256": "5caf7e174efc36168d1ccb2439de63226ae4498eac796ec96d76378d28f75eec",
+          "summary": "Model 3 v1 retained as provisional 48-hour physics-relative-density bands. Its calibration cohort selected future detections and target-date locations; it cannot establish independent beaching probabilities, negative base rate or operational coverage."
+        }
+      ]
+    },
+    {
+      "id": "split-wording-correction",
+      "date": "2026-09-02",
+      "title": "Chronological holdout correction",
+      "status": "completed",
+      "scope": "Model 1",
+      "category": "milestone",
+      "summary": "Audit corrected year-stratified wording: scene-sorted splits are chronological, with no scene overlap. Historical R33 interpretations must be read with this correction.",
+      "evidence": [
+        {
+          "source_path": "CLAUDE.md",
+          "sha256": "f42447e49f9145da5dd508d5c9a3c1c91e52738fa165a910d4d34f09103c4e32",
+          "commit": "4e8f35582323e52de597b484cc64c04e96dbba2a",
+          "summary": "Audit corrected year-stratified wording: scene-sorted splits are chronological, with no scene overlap. Historical R33 interpretations must be read with this correction.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "claims-reset",
+      "date": "2026-09-05",
+      "title": "Claim/evidence register supersedes historical headlines",
+      "status": "completed",
+      "scope": "All models",
+      "category": "milestone",
+      "summary": "M1 0.6440 is selected-patch/test-tuned; gold subset is non-independent; R18 is diagnostic with unresolved historical contracts; Model 3 is provisional, not beaching probability.",
+      "evidence": [
+        {
+          "source_path": "docs/claim-evidence-register.md",
+          "sha256": "f6945bda193c6af3577e32fa423feaa4191dc94d8e93d56708344be4fede1447",
+          "commit": null,
+          "summary": "M1 0.6440 is selected-patch/test-tuned; gold subset is non-independent; R18 is diagnostic with unresolved historical contracts; Model 3 is provisional, not beaching probability.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "cersat-audit",
+      "date": "2026-09-06",
+      "title": "CERSAT publication audit: no-go",
+      "status": "completed",
+      "scope": "Model 2 CERSAT",
+      "category": "milestone",
+      "summary": "Audit found temporal-support, observation-representation, missingness and block-bootstrap issues. Early results were not accepted as confirmation; no protected outcome contents are republished.",
+      "evidence": [
+        {
+          "source_path": "docs/model2-publication-review-2026-09-06.md",
+          "sha256": "a7378af1fa29ee088e922ee25df86548c78086e34c0a60afd71f3623de4a51d6",
+          "commit": null,
+          "summary": "Audit found temporal-support, observation-representation, missingness and block-bootstrap issues. Early results were not accepted as confirmation; no protected outcome contents are republished.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "cersat-repair",
+      "date": "2026-09-07",
+      "title": "CERSAT repair audit: incomplete",
+      "status": "completed",
+      "scope": "Model 2 CERSAT",
+      "category": "milestone",
+      "summary": "Repaired development evidence superseded earlier point estimates, but incomplete provenance, controls and inference/statistical handling kept confirmation closed. 2024 proposed for once-only confirmation and 2025 reserved.",
+      "evidence": [
+        {
+          "source_path": "docs/model2-repair-review-2026-09-07.md",
+          "sha256": "397cfe78cf4f33a930fff261674473d70e383a9f6d9a06862bf33b21241a2ba9",
+          "commit": null,
+          "summary": "Repaired development evidence superseded earlier point estimates, but incomplete provenance, controls and inference/statistical handling kept confirmation closed. 2024 proposed for once-only confirmation and 2025 reserved.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "cersat-readiness",
+      "date": "2026-09-08",
+      "title": "CERSAT final-readiness audit",
+      "status": "completed",
+      "scope": "Model 2 CERSAT",
+      "category": "milestone",
+      "summary": "Further score-blind review preserved a frozen train-2021/select-2022 design and confirmation controls; readiness is not a forecast-performance result.",
+      "evidence": [
+        {
+          "source_path": "docs/model2-final-readiness-review-2026-09-08.md",
+          "sha256": "d08ddc0e9d23857c7a9f42ed0ed18a930b46b0bc33ac95f0ef366eeefe99aa9b",
+          "commit": null,
+          "summary": "Further score-blind review preserved a frozen train-2021/select-2022 design and confirmation controls; readiness is not a forecast-performance result.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "cersat-v3-no-go",
+      "date": "2026-09-09",
+      "title": "CERSAT V3: execution defects block confirmation",
+      "status": "completed",
+      "scope": "Model 2 CERSAT",
+      "category": "milestone",
+      "summary": "Review identified an unwired actual frozen-C entry point and raw masks thresholded before invalid-value checks. Required repairs preceded any confirmation.",
+      "evidence": [
+        {
+          "source_path": "docs/model2-v3-independent-go-review-2026-09-09.md",
+          "sha256": "0243967687c00c444370c977b9c8d677aa52956820c5f7baeddff29280c1be9a",
+          "commit": null,
+          "summary": "Review identified an unwired actual frozen-C entry point and raw masks thresholded before invalid-value checks. Required repairs preceded any confirmation.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "cersat-v4-go",
+      "date": "2026-09-10",
+      "title": "CERSAT V4: score-blind readiness approved",
+      "status": "completed",
+      "scope": "Model 2 CERSAT",
+      "category": "milestone",
+      "summary": "Independent review closed runner and raw-mask defects, verified payload hashes and exact ensemble, and authorized one frozen confirmation; the review itself did not inspect performance.",
+      "evidence": [
+        {
+          "source_path": "docs/model2-v4-independent-go-review-2026-09-10.md",
+          "sha256": "2dc6fae220dd532512f43789f2941f951ae682a50440304a223a3a1afcd11908",
+          "commit": null,
+          "summary": "Independent review closed runner and raw-mask defects, verified payload hashes and exact ensemble, and authorized one frozen confirmation; the review itself did not inspect performance.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": []
+    },
+    {
+      "id": "m2-frozen-c-confirmation",
+      "date": "2026-09-10",
+      "title": "Frozen C: reported 2024 nominal 48-hour confirmation",
+      "status": "completed",
+      "scope": "Model 2 CERSAT",
+      "category": "experiment",
+      "summary": "Approved post-confirmation assessment records 228 admitted SKN cases: C mean IoU 0.5152 versus persistence 0.4334; paired mean gain 0.0818 (18.9% relative), 190 wins, 3 ties, 35 losses. These are user-supplied final aggregate results, not independently re-audited for this public release.",
+      "evidence": [
+        {
+          "source_path": "docs/post-confirmation-production-assessment-2026-09-10.md",
+          "sha256": "ee80a61a62a28680afbe515fc6779d4d95200d565bcde37c9a95cf09005eb289",
+          "commit": null,
+          "summary": "Approved post-confirmation assessment records 228 admitted SKN cases: C mean IoU 0.5152 versus persistence 0.4334; paired mean gain 0.0818 (18.9% relative), 190 wins, 3 ties, 35 losses. These are user-supplied final aggregate results, not independently re-audited for this public release.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [
+        "m2-frozen-c-confirmation"
+      ],
+      "experiment_path": "experiments/m2-frozen-c-confirmation/experiment.json"
+    },
+    {
+      "id": "current-scope",
+      "date": "2026-09-19",
+      "title": "Research status at release preparation",
+      "status": "completed",
+      "scope": "All models",
+      "category": "milestone",
+      "summary": "Current handoff preserves frozen C and R46/R47 and R18 selections. No new training completion or seven-day forecast skill is asserted. User confirms no active training; the separately identified Putman feasibility study is the current research in progress.",
+      "evidence": [
+        {
+          "source_path": "docs/handoff.md",
+          "sha256": "c40fdaf827f7d74f30f393280be8c16a88493b7e4f7f3f1b696fd8e3751b8b23",
+          "commit": "f4b47afee0c60a821dd067fdf97948f8a6c936af",
+          "summary": "Current handoff preserves frozen C and R46/R47 and R18 selections. Current active research status additionally uses the separately disclosed owner declaration.",
+          "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+          "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+        }
+      ],
+      "experiment_ids": [],
+      "provenance_note": "No-active-training and Putman-current-study status were explicitly supplied by the project owner during public-release preparation on 2026-09-19; these updates are not asserted to be in the preceding handoff snapshot."
+    },
+    {
+      "id": "putman-gps-physics-phase1",
+      "date": "2026-09-19",
+      "title": "Putman GPS / physics sub-kilometre feasibility, Phase 1 — IN PROGRESS",
+      "status": "in_progress",
+      "scope": "Currents-only retrospective hindcast using real 2018 GLORYS and frozen Putman rolling GPS cases for St Kitts feasibility. User confirms a background worker is running; no outcomes or unfinished metrics published. No model training is active.",
+      "category": "research-programme"
+    }
+  ]
+}

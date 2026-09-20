@@ -1,0 +1,4 @@
+split,audited_scenes,total_scenes,positive_pixels_before,inland_positive_pixels_removed,shoreline_positive_pixels_ignored,inland_fraction_percent
+Train,765,765,1517675,608082,18044,40.0667
+Validation,171,171,314966,120464,3078,38.2467
+Test,173,173,326093,114367,3304,35.0719

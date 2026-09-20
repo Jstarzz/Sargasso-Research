@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "release_date": "2026-09-19",
+  "note": "Sanitized extracts of completed research records. Paths identify private research sources, not promised public files. Source files were untracked; no source commit is asserted. Hashes establish source identity, not independent validation.",
+  "sources": [
+    {
+      "id": "frozen-c-summary",
+      "source_path": "docs/post-confirmation-production-assessment-2026-09-10.md",
+      "sha256": "ee80a61a62a28680afbe515fc6779d4d95200d565bcde37c9a95cf09005eb289",
+      "source_commit": null,
+      "evidence_level": "approved investigator-supplied completed aggregate; not independently re-audited for this release",
+      "summary": "Frozen-C nominal 48-hour SKN restricted-source 2024 daily-map hindcast: mean IoU 0.5152 versus persistence 0.4334, paired gain 0.0818, 14-day-block 95% interval [0.0655,0.0977], 190 wins, 3 ties, 35 losses, 228 scorable cases. This is not live or beaching validation.",
+      "public_table": "results/forecast-benchmark.csv"
+    },
+    {
+      "id": "coastal-label-audit",
+      "source_path": "papers/paper1-coastal-label-contamination/tables/contamination-by-split.csv",
+      "sha256": "db32a79aaeddc7081456d4946504cce5f1334d8bca584509cdb02436d5d688b6",
+      "source_commit": null,
+      "evidence_level": "completed split-level aggregate audit",
+      "summary": "Sentinel-2-derived weak-label positives geometrically classified at least 100 m inland: train 608082/1517675; validation 120464/314966; test 114367/326093. Separate shoreline positives ignored: 18044,3078,3304. Audited scene coverage 765/765,171/171,173/173. No claim of independent human adjudication or a completed controlled ablation.",
+      "public_table": "results/coastal-label-audit.csv"
+    },
+    {
+      "id": "historical-claim-register",
+      "source_path": "docs/claim-evidence-register.md",
+      "sha256": "f6945bda193c6af3577e32fa423feaa4191dc94d8e93d56708344be4fede1447",
+      "source_commit": null,
+      "evidence_level": "methodological qualification of historical research claims",
+      "summary": "Historical R46/R47 ensemble IoU 0.6440 is guarded-label, selected-patch, test-tuned and not an unbiased serving estimate. Historical R18 learned correction validity is restricted to 48 h and more than 10 km offshore. Existing coastal risk scores do not establish validated beaching probabilities."
+    }
+  ]
+}

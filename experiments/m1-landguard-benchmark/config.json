@@ -1,0 +1,15 @@
+{
+  "record_type": "research configuration summary",
+  "complete_reproduction_config": false,
+  "configuration": {
+    "ensemble": [
+      "R46",
+      "R47"
+    ],
+    "combination": "mean probability",
+    "tta_passes": 4,
+    "threshold": 0.6,
+    "land_guard_inland_m": 100
+  },
+  "missing_information": "Unrecorded settings must not be inferred; restricted inputs and training implementation are not distributed."
+}

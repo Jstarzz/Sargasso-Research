@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+message: "Please cite this research archive and the public Git commit used. Cite upstream methods and data separately."
+type: dataset
+title: "Sargasso: Research Archive"
+authors:
+  - family-names: Davis
+    given-names: Josiah
+    affiliation: Sargasso
+version: "2026.09.19"
+date-released: 2026-09-19
+url: "https://github.com/Jstarzz/Sargasso-Research"
+repository-code: "https://github.com/Jstarzz/Sargasso-Research"
+license: CC-BY-4.0
+abstract: >-
+  A curated research archive of sargassum satellite detection, drift forecasting,
+  and coastal-risk research. Includes completed experiment summaries, negative
+  results, aggregate evaluation records, configuration summaries, source
+  provenance, and a chronological research timeline. Restricted data, model
+  weights, product code, and unfinished results are not distributed.
+keywords:
+  - sargassum
+  - remote sensing
+  - segmentation
+  - drift forecasting
+  - research provenance
+references:
+  - type: article
+    title: "Satellite remote sensing of pelagic Sargassum macroalgae: The power of high resolution and deep learning"
+    authors:
+      - family-names: Wang
+        given-names: Mengqiu
+      - family-names: Hu
+        given-names: Chuanmin
+    year: 2021
+    journal: Remote Sensing of Environment
+    volume: 264
+    doi: 10.1016/j.rse.2021.112631
+  - type: conference-paper
+    title: "U-Net: Convolutional Networks for Biomedical Image Segmentation"
+    authors:
+      - family-names: Ronneberger
+        given-names: Olaf
+      - family-names: Fischer
+        given-names: Philipp
+      - family-names: Brox
+        given-names: Thomas
+    year: 2015
+    doi: 10.48550/arXiv.1505.04597
+  - type: conference-paper
+    title: "EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks"
+    authors:
+      - family-names: Tan
+        given-names: Mingxing
+      - family-names: Le
+        given-names: Quoc V.
+    year: 2019
+    doi: 10.48550/arXiv.1905.11946

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "m1-landguard-benchmark",
+  "date": "2026-06-10",
+  "title": "Land-guarded detection benchmark",
+  "status": "completed",
+  "scope": "Model 1",
+  "summary": "Land-guarded labels plus masked R46/R47 ensemble and four-pass TTA at 0.60 yielded recorded IoU 0.6440; unmasked inference on guarded labels yielded 0.4692. Selection and threshold tuning reused test evidence.",
+  "metrics": [
+    {
+      "name": "guarded_masked_iou",
+      "value": 0.644,
+      "unit": "ratio",
+      "scope": "Historical selected-patch test; 5,000 patches, reported 173 scenes",
+      "provenance": "See evidence entries in this record.",
+      "limitations": "Historical development evidence unless explicitly identified as frozen confirmation; not live operational accuracy."
+    },
+    {
+      "name": "guarded_unmasked_iou",
+      "value": 0.4692,
+      "unit": "ratio",
+      "scope": "Same recorded guarded-label comparison",
+      "provenance": "See evidence entries in this record.",
+      "limitations": "Historical development evidence unless explicitly identified as frozen confirmation; not live operational accuracy."
+    },
+    {
+      "name": "inland_positive_fraction",
+      "value": 0.351,
+      "unit": "ratio",
+      "scope": "Original test-label positives at least 100 m inland",
+      "provenance": "See evidence entries in this record.",
+      "limitations": "Historical development evidence unless explicitly identified as frozen confirmation; not live operational accuracy."
+    }
+  ],
+  "outcome": "positive",
+  "evidence": [
+    {
+      "source_path": "docs/tuning-log.md",
+      "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+      "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+      "summary": "Land-guarded labels plus masked R46/R47 ensemble and four-pass TTA at 0.60 yielded recorded IoU 0.6440; unmasked inference on guarded labels yielded 0.4692. Selection and threshold tuning reused test evidence.",
+      "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+      "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+    }
+  ],
+  "limitations": [
+    "Historical selected-patch/test-tuned result, not unbiased serving accuracy.",
+    "Exact original guarded image/label/mask/probability package is unavailable; public release cannot independently replay 0.6440.",
+    "Gold review was prediction-exposed and must not be called independent corroboration.",
+    "173 versus 174 scenes in historical records remains unresolved."
+  ],
+  "citations": []
+}
