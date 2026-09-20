@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "m1-r26-2026-04-20",
+  "date": "2026-04-20",
+  "title": "Model 1 R26: Rotation on expanded 60-epoch baseline",
+  "status": "completed",
+  "scope": "Model 1",
+  "summary": "Rotation on expanded 60-epoch baseline. Historical disposition: KEPT .",
+  "metrics": [
+    {
+      "name": "validation_iou",
+      "value": 0.1099,
+      "unit": "ratio",
+      "scope": "Historical validation split; guarded labels only for R48/R49",
+      "provenance": "See evidence entries in this record.",
+      "limitations": "Historical development evidence unless explicitly identified as frozen confirmation; not live operational accuracy."
+    }
+  ],
+  "outcome": "positive",
+  "evidence": [
+    {
+      "source_path": "docs/tuning-log.md",
+      "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+      "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+      "summary": "Rotation on expanded 60-epoch baseline. Historical disposition: KEPT .",
+      "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+      "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+    }
+  ],
+  "limitations": [
+    "Historical development evidence; repeated test inspection and changing cohorts prevent an unbiased serving-performance claim.",
+    "Configurations summarize the tested delta, not an independently executable training package.",
+    "Early data and split defects limit interpretation; the 2026-09-02 audit corrected historical year-stratified wording to chronological scene splitting."
+  ],
+  "citations": []
+}

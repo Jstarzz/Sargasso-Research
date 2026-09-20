@@ -1,0 +1,9 @@
+{
+  "record_type": "research configuration summary",
+  "complete_reproduction_config": false,
+  "configuration": {
+    "delta": "Weight decay 1e-4; early strategy stop",
+    "lineage": "See source record; dates and round IDs preserved as recorded."
+  },
+  "missing_information": "Unrecorded settings must not be inferred; restricted inputs and training implementation are not distributed."
+}

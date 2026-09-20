@@ -1,0 +1,8 @@
+{
+  "record_type": "research configuration summary",
+  "complete_reproduction_config": false,
+  "configuration": {
+    "experiment_delta": "Expanded pairs with horizon channel"
+  },
+  "missing_information": "Unrecorded settings must not be inferred; restricted inputs and training implementation are not distributed."
+}

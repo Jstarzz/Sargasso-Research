@@ -1,0 +1,17 @@
+{
+  "record_type": "research configuration summary",
+  "complete_reproduction_config": false,
+  "configuration": {
+    "encoder": "efficientnet-b3",
+    "inputs": [
+      "FAI",
+      "AFAI",
+      "NDWI"
+    ],
+    "epochs": 30,
+    "seed": 42,
+    "pos_weight": 10,
+    "lr": 0.0001
+  },
+  "missing_information": "Unrecorded settings must not be inferred; restricted inputs and training implementation are not distributed."
+}

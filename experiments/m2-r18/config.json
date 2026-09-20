@@ -1,0 +1,24 @@
+{
+  "record_type": "research configuration summary",
+  "complete_reproduction_config": false,
+  "configuration": {
+    "seed": 11,
+    "base_channels": 32,
+    "input_channels": [
+      "physics_probability",
+      "u10",
+      "v10",
+      "uo",
+      "vo"
+    ],
+    "windage": 0.005,
+    "epochs": 150,
+    "learning_rate": 0.001,
+    "weight_decay": 0.001,
+    "horizon_hours": 48,
+    "offshore_distance_km_exclusive": 10,
+    "training_source_pairs_nominal": 140,
+    "training_pairs_effective_approximately": 105
+  },
+  "missing_information": "Unrecorded settings must not be inferred; restricted inputs and training implementation are not distributed."
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "m1-r14-baseline",
+  "date": null,
+  "title": "Model 1 R14 baseline",
+  "status": "completed",
+  "scope": "Model 1",
+  "summary": "Baseline recorded at the start of the tuning log; B3, three-index inputs, BCE/Tversky, positive weight 10, percentile normalization and 30 epochs.",
+  "metrics": [
+    {
+      "name": "validation_iou",
+      "value": 0.0839,
+      "unit": "ratio",
+      "scope": "Early baseline @ epoch 14",
+      "provenance": "See evidence entries in this record.",
+      "limitations": "Historical development evidence unless explicitly identified as frozen confirmation; not live operational accuracy."
+    }
+  ],
+  "outcome": "inconclusive",
+  "evidence": [
+    {
+      "source_path": "docs/tuning-log.md",
+      "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+      "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+      "summary": "Baseline recorded at the start of the tuning log; B3, three-index inputs, BCE/Tversky, positive weight 10, percentile normalization and 30 epochs.",
+      "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+      "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+    }
+  ],
+  "limitations": [
+    "Retrospective development record; labels, cohorts and scoring changed between generations. Do not rank across incompatible protocols.",
+    "Only aggregate results and documented configuration are released; weights, observations and private source code are excluded."
+  ],
+  "citations": [],
+  "date_note": "Exact experiment date not established in retained records; positioned by documented lineage."
+}

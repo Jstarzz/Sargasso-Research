@@ -1,0 +1,24 @@
+{
+  "record_type": "research configuration summary",
+  "complete_reproduction_config": false,
+  "configuration": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "selected_epochs": [
+      78,
+      63,
+      59
+    ],
+    "train_year": 2021,
+    "selection_year": 2022,
+    "confirmation_year": 2024,
+    "refit": false,
+    "horizon_hours": 48,
+    "forcing": "retrospective ERA5",
+    "cmems": false
+  },
+  "missing_information": "Unrecorded settings must not be inferred; restricted inputs and training implementation are not distributed."
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "m2-r18",
+  "date": "2026-05-30",
+  "title": "Model 2 R18: Five-channel seed 11 selection",
+  "status": "completed",
+  "scope": "Model 2",
+  "summary": "140 nominal two-day pairs; later records identify about 105 effective pairs. Selected from 20 seeds; exact 48-hour and more-than-10-km offshore scope.",
+  "metrics": [
+    {
+      "name": "validation_loss",
+      "value": 0.8486,
+      "unit": "ratio",
+      "scope": "Recorded selection validation; Dice-family loss, lower is better",
+      "provenance": "See evidence entries in this record.",
+      "limitations": "Historical development evidence unless explicitly identified as frozen confirmation; not live operational accuracy."
+    },
+    {
+      "name": "physics_median_iou",
+      "value": 0.0403,
+      "unit": "ratio",
+      "scope": "Reused 71-case two-day offshore diagnostic; not independent confirmation"
+    },
+    {
+      "name": "corrected_median_iou",
+      "value": 0.1195,
+      "unit": "ratio",
+      "scope": "Reused 71-case two-day offshore diagnostic; not independent confirmation"
+    },
+    {
+      "name": "diagnostic_cases",
+      "value": 71,
+      "unit": "cases",
+      "scope": "Reused 71-case two-day offshore diagnostic; not independent confirmation"
+    }
+  ],
+  "outcome": "positive",
+  "evidence": [
+    {
+      "source_path": "docs/tuning-log.md",
+      "sha256": "4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829",
+      "commit": "e833e4b2164a28879b7fef8408e52c5734cc6b5e",
+      "summary": "140 nominal two-day pairs; later records identify about 105 effective pairs. Selected from 20 seeds; exact 48-hour and more-than-10-km offshore scope.",
+      "source_revision_note": "Explicit historical commit where supplied; otherwise last tracked source commit is context only and snapshot SHA identifies exact reviewed bytes. Untracked sources have no commit.",
+      "access": "Private source; public summary transcribed here. Hash identifies source bytes, not public availability."
+    }
+  ],
+  "limitations": [
+    "Development evidence from repeatedly reused cohorts; not independent confirmation or live forecast skill.",
+    "Historical horizon, observation, forcing and scoring contracts changed; numerical comparisons across records can be confounded.",
+    "No restricted observations, case-level outcomes, weights or unfinished run metrics are released.",
+    "Historical grid used source and target detections, forced-noon timing and unresolved CMEMS contract differences; these diagnostic gains cannot establish operational skill."
+  ],
+  "citations": []
+}
