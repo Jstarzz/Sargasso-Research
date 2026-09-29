@@ -66,3 +66,6 @@ Historical research evidence; metrics are meaningful only within their stated sc
 | [Model 2 R22: Three-day specialist](experiments/m2-r22/experiment.json) | 2026-06-10 | negative | Model 2 |
 | [Model 2 R23: Inference ensemble of R18 seeds](experiments/m2-r23/experiment.json) | 2026-06-10 | inconclusive | Model 2 |
 | [Frozen C: reported 2024 nominal 48-hour confirmation](experiments/m2-frozen-c-confirmation/experiment.json) | 2026-09-10 | positive | Model 2 CERSAT |
+| [R49 SKN serving-mask evaluation against production](experiments/m1-r49-skn-serving-eval-2026-09-29/experiment.json) | 2026-09-29 | positive | Model 1 comparison of R49 with the production R46+R47 mean-probability ensemble on the SKN evaluation cohort under the serving land mask. |
+| [Model 2 C3 recovery comparison](experiments/m2-c3-recovery-2026-09-29/experiment.json) | 2026-09-29 | mixed | Aggregate Model 2 recovery comparison of C3, C, and P on the previously exposed June-September 2026 cohort. |
+| [Model 3 island and coastal stretch recovery results](experiments/m3-recovery-island-stretch-2026-09-29/experiment.json) | 2026-09-29 | inconclusive | Aggregate Model 3 island and coastal stretch risk comparisons in the previously exposed June-September 2026 recovery cohort. |

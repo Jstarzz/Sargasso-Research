@@ -1081,6 +1081,42 @@ Current handoff preserves frozen C and R46/R47 and R18 selections. No new traini
 
 **IN PROGRESS** · Currents-only retrospective hindcast using real 2018 GLORYS and frozen Putman rolling GPS cases for St Kitts feasibility. User confirms a background worker is running; no outcomes or unfinished metrics published. No model training is active.
 
+### 2026-09-29 — R49 SKN serving-mask evaluation against production
+
+**COMPLETED** · Model 1 comparison of R49 with the production R46+R47 mean-probability ensemble on the SKN evaluation cohort under the serving land mask.
+
+On 129 paired SKN scenes evaluated with the serving land mask, R49 achieved IoU 0.3903 versus 0.2148 for the production R46+R47 mean-probability ensemble. The paired difference was +0.1755 with a 95% interval of [0.0928, 0.2500].
+
+- [R49 SKN serving-mask evaluation against production](experiments/m1-r49-skn-serving-eval-2026-09-29/experiment.json)
+
+**Provenance**
+
+- Sanitized source index with aggregate R49 and production SKN serving-mask results and their paired interval.; Source label: `artifacts/sprint_final_check/model_results_20260929.md` (private historical source; provenance only); SHA-256: `ace3af28e824aea618a1652273cb37561d2b713317c77847890e34b9c267f515`; Source commit: `202c028`
+
+### 2026-09-29 — Model 2 C3 recovery comparison
+
+**COMPLETED** · Aggregate Model 2 recovery comparison of C3, C, and P on the previously exposed June-September 2026 cohort.
+
+On 70 admitted pairs in a disclosed second look, mean IoU was 0.58914 for C3, 0.58316 for C, and 0.46878 for P. C3 minus C was +0.005985 with a 14-day interval of [-0.005435, 0.015853], a NO_PASS result. C3 minus P was +0.12036 with an interval of [0.10256, 0.14324].
+
+- [Model 2 C3 recovery comparison](experiments/m2-c3-recovery-2026-09-29/experiment.json)
+
+**Provenance**
+
+- Sanitized source index with aggregate C3, C, and P metrics and intervals.; Source label: `artifacts/sprint_final_check/model_results_20260929.md` (private historical source; provenance only); SHA-256: `ace3af28e824aea618a1652273cb37561d2b713317c77847890e34b9c267f515`; Source commit: `202c028`
+
+### 2026-09-29 — Model 3 island and coastal stretch recovery results
+
+**COMPLETED** · Aggregate Model 3 island and coastal stretch risk comparisons in the previously exposed June-September 2026 recovery cohort.
+
+In a disclosed second look, island v3 had 154, 155, 151, and 149 positives at 2, 3, 5, and 7 days, with zero negatives at every horizon, leaving AUC evidence insufficient. For coastal stretch, the primary 7-day comparison on n=419 had v3 AUC 0.59556 versus climatology K 0.50798, a delta of +0.08759 with 95% interval [-0.02779, 0.14468], which is inconclusive. The descriptive 2-day comparison on n=431 had delta +0.11593 with interval [0.02681, 0.17622].
+
+- [Model 3 island and coastal stretch recovery results](experiments/m3-recovery-island-stretch-2026-09-29/experiment.json)
+
+**Provenance**
+
+- Sanitized source index with aggregate island counts, island AUC limitation, and coastal stretch comparisons.; Source label: `artifacts/sprint_final_check/model_results_20260929.md` (private historical source; provenance only); SHA-256: `ace3af28e824aea618a1652273cb37561d2b713317c77847890e34b9c267f515`; Source commit: `202c028`
+
 ## Undated records
 
 These records have no established date. Their placement here implies no chronological order relative to dated milestones.

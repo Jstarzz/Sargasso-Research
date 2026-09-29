@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "m1-r49-skn-serving-eval-2026-09-29",
+  "title": "R49 SKN serving-mask evaluation against production",
+  "status": "completed",
+  "date": "2026-09-29",
+  "date_note": "",
+  "summary": "On 129 paired SKN scenes evaluated with the serving land mask, R49 achieved IoU 0.3903 versus 0.2148 for the production R46+R47 mean-probability ensemble. The paired difference was +0.1755 with a 95% interval of [0.0928, 0.2500].",
+  "scope": "Model 1 comparison of R49 with the production R46+R47 mean-probability ensemble on the SKN evaluation cohort under the serving land mask.",
+  "outcome": "positive",
+  "metrics": [
+    {"name": "R49 serving-mask IoU", "value": 0.3903, "provenance": "129 paired SKN scenes evaluated under the serving land mask."},
+    {"name": "Production R46+R47 serving-mask IoU", "value": 0.2148, "provenance": "Same 129 paired SKN scenes and serving land mask."},
+    {"name": "Paired IoU difference, R49 minus production", "value": 0.1755, "provenance": "Paired-scene comparison on the same SKN evaluation cohort."},
+    {"name": "Paired IoU difference 95% interval lower bound", "value": 0.0928, "provenance": "Paired-scene bootstrap interval."},
+    {"name": "Paired IoU difference 95% interval upper bound", "value": 0.25, "provenance": "Paired-scene bootstrap interval."},
+    {"name": "Paired scenes", "value": 129, "provenance": "SKN serving-mask evaluation cohort."}
+  ],
+  "limitations": [
+    "The R49 validation split was used for model selection.",
+    "The historical guarded-label IoU of 0.6440 comes from a different cohort and metric and was test-tuned. It is not comparable to this SKN result and is not an unbiased serving estimate.",
+    "This evaluation does not change the selected production model or its serving scope."
+  ],
+  "evidence": [
+    {
+      "summary": "Sanitized source index with aggregate R49 and production SKN serving-mask results and their paired interval.",
+      "source_path": "artifacts/sprint_final_check/model_results_20260929.md",
+      "sha256": "ace3af28e824aea618a1652273cb37561d2b713317c77847890e34b9c267f515",
+      "commit": "202c028"
+    }
+  ],
+  "citations": []
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "m2-c3-recovery-2026-09-29",
+  "title": "Model 2 C3 recovery comparison",
+  "status": "completed",
+  "date": "2026-09-29",
+  "date_note": "",
+  "summary": "On 70 admitted pairs in a disclosed second look, mean IoU was 0.58914 for C3, 0.58316 for C, and 0.46878 for P. C3 minus C was +0.005985 with a 14-day interval of [-0.005435, 0.015853], a NO_PASS result. C3 minus P was +0.12036 with an interval of [0.10256, 0.14324].",
+  "scope": "Aggregate Model 2 recovery comparison of C3, C, and P on the previously exposed June-September 2026 cohort.",
+  "outcome": "mixed",
+  "metrics": [
+    {"name": "C3 mean IoU", "value": 0.58914, "provenance": "70 admitted pairs in the disclosed second-look recovery cohort."},
+    {"name": "C mean IoU", "value": 0.58316, "provenance": "Same 70 admitted pairs."},
+    {"name": "P mean IoU", "value": 0.46878, "provenance": "Same 70 admitted pairs."},
+    {"name": "C3 minus C mean IoU", "value": 0.005985, "provenance": "Paired comparison over 70 admitted pairs; disclosed second look."},
+    {"name": "C3 minus C 14-day interval lower bound", "value": -0.005435, "provenance": "Interval includes zero; comparison outcome NO_PASS."},
+    {"name": "C3 minus C 14-day interval upper bound", "value": 0.015853, "provenance": "Interval includes zero; comparison outcome NO_PASS."},
+    {"name": "C3 minus P mean IoU", "value": 0.12036, "provenance": "Secondary paired comparison over the same 70 admitted pairs."},
+    {"name": "C3 minus P interval lower bound", "value": 0.10256, "provenance": "Reported interval for the secondary comparison."},
+    {"name": "C3 minus P interval upper bound", "value": 0.14324, "provenance": "Reported interval for the secondary comparison."},
+    {"name": "Admitted pairs", "value": 70, "provenance": "Previously exposed June-September 2026 cohort."}
+  ],
+  "limitations": [
+    "This is a DISCLOSED SECOND LOOK on a previously exposed cohort, not independent confirmation, a fresh holdout, or confirmatory evidence.",
+    "C3 minus C is NO_PASS because its interval includes zero.",
+    "C3 minus P is a secondary comparison and should not be presented as independent confirmation.",
+    "This recovery comparison does not change the selected Model 2 checkpoint or serving scope."
+  ],
+  "evidence": [
+    {
+      "summary": "Sanitized source index with aggregate C3, C, and P metrics and intervals.",
+      "source_path": "artifacts/sprint_final_check/model_results_20260929.md",
+      "sha256": "ace3af28e824aea618a1652273cb37561d2b713317c77847890e34b9c267f515",
+      "commit": "202c028"
+    }
+  ],
+  "citations": []
+}

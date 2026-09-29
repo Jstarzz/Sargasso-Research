@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "m3-recovery-island-stretch-2026-09-29",
+  "title": "Model 3 island and coastal stretch recovery results",
+  "status": "completed",
+  "date": "2026-09-29",
+  "date_note": "",
+  "summary": "In a disclosed second look, island v3 had 154, 155, 151, and 149 positives at 2, 3, 5, and 7 days, with zero negatives at every horizon, leaving AUC evidence insufficient. For coastal stretch, the primary 7-day comparison on n=419 had v3 AUC 0.59556 versus climatology K 0.50798, a delta of +0.08759 with 95% interval [-0.02779, 0.14468], which is inconclusive. The descriptive 2-day comparison on n=431 had delta +0.11593 with interval [0.02681, 0.17622].",
+  "scope": "Aggregate Model 3 island and coastal stretch risk comparisons in the previously exposed June-September 2026 recovery cohort.",
+  "outcome": "inconclusive",
+  "metrics": [
+    {"name": "Island positives at 2 days", "value": 154, "provenance": "Disclosed second-look cohort; zero negatives at this horizon."},
+    {"name": "Island positives at 3 days", "value": 155, "provenance": "Disclosed second-look cohort; zero negatives at this horizon."},
+    {"name": "Island positives at 5 days", "value": 151, "provenance": "Disclosed second-look cohort; zero negatives at this horizon."},
+    {"name": "Island positives at 7 days", "value": 149, "provenance": "Disclosed second-look cohort; zero negatives at this horizon."},
+    {"name": "Island negatives at each reported horizon", "value": 0, "provenance": "AUC evidence is insufficient at all four horizons."},
+    {"name": "Coastal stretch v3 AUC at 7 days", "value": 0.59556, "provenance": "Primary comparison; n=419."},
+    {"name": "Coastal stretch climatology K AUC at 7 days", "value": 0.50798, "provenance": "Primary comparison; same n=419."},
+    {"name": "Coastal stretch v3 minus K AUC at 7 days", "value": 0.08759, "provenance": "Primary comparison; 95% interval includes zero."},
+    {"name": "Coastal stretch 7-day interval lower bound", "value": -0.02779, "provenance": "Primary comparison; n=419."},
+    {"name": "Coastal stretch 7-day interval upper bound", "value": 0.14468, "provenance": "Primary comparison; n=419."},
+    {"name": "Coastal stretch descriptive v3 minus K AUC at 2 days", "value": 0.11593, "provenance": "Descriptive comparison; n=431."},
+    {"name": "Coastal stretch descriptive 2-day interval lower bound", "value": 0.02681, "provenance": "Descriptive comparison; n=431."},
+    {"name": "Coastal stretch descriptive 2-day interval upper bound", "value": 0.17622, "provenance": "Descriptive comparison; n=431."}
+  ],
+  "limitations": [
+    "This is a DISCLOSED SECOND LOOK on a previously exposed June-September 2026 cohort, not independent confirmation, a fresh holdout, or confirmatory evidence.",
+    "Island risk has zero negatives at each reported horizon, so its AUC evidence is insufficient.",
+    "Under the signed label definition, an island positive is any occupied zone cell even if eligibility is false; a negative requires at least 80% eligible coverage. These semantics and seasonal prevalence limit interpretation as natural prevalence.",
+    "The primary coastal stretch 7-day interval includes zero and is inconclusive.",
+    "The 2-day coastal stretch result is descriptive, not the primary comparison."
+  ],
+  "evidence": [
+    {
+      "summary": "Sanitized source index with aggregate island counts, island AUC limitation, and coastal stretch comparisons.",
+      "source_path": "artifacts/sprint_final_check/model_results_20260929.md",
+      "sha256": "ace3af28e824aea618a1652273cb37561d2b713317c77847890e34b9c267f515",
+      "commit": "202c028"
+    }
+  ],
+  "citations": []
+}
