@@ -1077,9 +1077,53 @@ Current handoff preserves frozen C and R46/R47 and R18 selections. No new traini
 
 - Current handoff preserves frozen C and R46/R47 and R18 selections. Current active research status additionally uses the separately disclosed owner declaration.; Source label: `docs/handoff.md` (private historical source; provenance only); SHA-256: `c40fdaf827f7d74f30f393280be8c16a88493b7e4f7f3f1b696fd8e3751b8b23`; Source commit: `f4b47afee0c60a821dd067fdf97948f8a6c936af`
 
-### 2026-09-19 — Putman GPS / physics sub-kilometre feasibility, Phase 1 — IN PROGRESS
+### 2026-09-20 — Sub-kilometre feasibility Phase 1: currents-only hindcast on Putman GPS tracks
 
-**IN PROGRESS** · Currents-only retrospective hindcast using real 2018 GLORYS and frozen Putman rolling GPS cases for St Kitts feasibility. User confirms a background worker is running; no outcomes or unfinished metrics published. No model training is active.
+**COMPLETED** · Retrospective drift hindcast of four natural Sargassum mat GPS tracks with reanalysis surface currents only, horizons 6, 12, 24 and 48 hours.
+
+Currents-only transport underperformed both persistence and a causal-velocity baseline at every horizon. Median endpoint error was 6.59, 12.80, 23.71 and 43.53 km at 6, 12, 24 and 48 h, versus 5.23, 9.69, 17.18 and 30.87 km for persistence on the same cases.
+
+- [Sub-kilometre feasibility Phase 1: currents-only hindcast on Putman GPS tracks](experiments/subkm-putman-currents-only-2026-09-20/experiment.json)
+
+**Provenance**
+
+- Aggregate comparison block of the Phase 1 results file.; Source label: `artifacts/subkm_putman_hindcast/currents_only_v1/results.json` (private historical source; provenance only); SHA-256: `d274df798f83087fff050f273cf02129bef9104f49ae9d56e1543eb83ccfa9a9`; Source commit: `f748028`
+
+### 2026-09-20 — Sub-kilometre feasibility Phase 4: adding wave Stokes drift
+
+**COMPLETED** · Currents, fixed 3 percent windage and reanalysis surface Stokes drift versus the same run without Stokes drift, on identical cases.
+
+Adding Stokes drift made no material difference at 6 and 12 h (median change -0.24 and +0.04 km) and made errors worse at 24 and 48 h (median change +0.80 km on 155 cases and +4.98 km on 133 cases). At 48 h the waves composite scored 30.89 km versus 30.87 km for persistence.
+
+- [Sub-kilometre feasibility Phase 4: adding wave Stokes drift](experiments/subkm-putman-stokes-2026-09-20/experiment.json)
+
+**Provenance**
+
+- Summary and marginal-effect blocks of the waves results file.; Source label: `artifacts/subkm_putman_hindcast/waves_v1/results.json` (private historical source; provenance only); SHA-256: `0de4aefb0ad261783d221093ec4b2cfb6c0061718ffb8ecac46a0d63d59d0742`; Source commit: `919b608`
+
+### 2026-09-20 — Sub-kilometre feasibility Phase 2: currents plus fixed windage sweep
+
+**COMPLETED** · Prespecified sweep of 0, 1, 2 and 3 percent of reanalysis 10 m wind added to reanalysis currents, scored on the intersection of cases valid under all four coefficients.
+
+Adding windage improved on currents-only at every horizon, and 3 percent was best at all four. At 48 h, 3 percent gave a 27.24 km median on 158 cases versus 30.96 km for persistence and 35.19 km for causal velocity. At 6, 12 and 24 h it beat persistence (5.02 vs 5.26, 9.24 vs 9.69, 16.07 vs 17.18 km) but not causal velocity (3.96, 7.20, 15.80 km).
+
+- [Sub-kilometre feasibility Phase 2: currents plus fixed windage sweep](experiments/subkm-putman-windage-sweep-2026-09-20/experiment.json)
+
+**Provenance**
+
+- Aggregate summary and cross-coefficient comparison of the sweep results file.; Source label: `artifacts/subkm_putman_hindcast/windage_sweep_v1/results.json` (private historical source; provenance only); SHA-256: `a43b6309eac9ba23de37085f97ff70ece9ff3487e8fd2b08a84d3df41540f361`; Source commit: `1a4a5e6`
+
+### 2026-09-20 — Sub-kilometre feasibility Phase 3: dependence-aware validation of the 3 percent windage finding
+
+**COMPLETED** · Leave-one-track-out and purged forward-time validation of the windage coefficient chosen in the sweep.
+
+The 3 percent finding only partially held up. Under leave-one-track-out, 3 percent was selected on all four training folds, and on held-out tracks it beat persistence in 9 of 16 meaningful horizon cells and causal velocity in 3 of 4 meaningful 48 h cells. Under a purged forward-time split, the fit period selected 2 percent, and on the later test period it beat persistence in 0 of 4 cells and causal velocity in 0 of 1.
+
+- [Sub-kilometre feasibility Phase 3: dependence-aware validation of the 3 percent windage finding](experiments/subkm-putman-windage-validation-2026-09-20/experiment.json)
+
+**Provenance**
+
+- Verdict fields of the validation results file; the sweep medians reproduce the sweep file exactly.; Source label: `artifacts/subkm_putman_hindcast/windage_validation_v1/results.json` (private historical source; provenance only); SHA-256: `aa20d841ea3e9f536d13768824b5002b604522328fe52968cd9117297dfaa6c8`; Source commit: `b294683`
 
 ### 2026-09-24 — Prospective daily shadow evaluation of frozen C - IN PROGRESS
 

@@ -22,4 +22,4 @@ The frozen windage looks too low for mats. The sample is small, so treat the siz
 - Frozen and persistence rows are pooled, not leave-one-out.
 - Daily-mean reanalysis currents limit the current-plus-wind variants.
 - Endpoint distance on observed mat tracks is not map overlap and not coastal-arrival skill.
-- This is a calibration study. It is not the separately announced sub-kilometre St Kitts feasibility benchmark and does not complete it.
+- This is a separate calibration study on the same four tracks. See the sub-kilometre feasibility records (subkm-putman-*) for the frozen-protocol hindcasts, where the best coefficient did not hold up forward in time.

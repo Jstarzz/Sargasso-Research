@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "subkm-putman-windage-sweep-2026-09-20",
+  "status": "completed",
+  "date_note": "",
+  "citations": [],
+  "title": "Sub-kilometre feasibility Phase 2: currents plus fixed windage sweep",
+  "date": "2026-09-20",
+  "scope": "Prespecified sweep of 0, 1, 2 and 3 percent of reanalysis 10 m wind added to reanalysis currents, scored on the intersection of cases valid under all four coefficients.",
+  "summary": "Adding windage improved on currents-only at every horizon, and 3 percent was best at all four. At 48 h, 3 percent gave a 27.24 km median on 158 cases versus 30.96 km for persistence and 35.19 km for causal velocity. At 6, 12 and 24 h it beat persistence (5.02 vs 5.26, 9.24 vs 9.69, 16.07 vs 17.18 km) but not causal velocity (3.96, 7.20, 15.80 km).",
+  "outcome": "mixed",
+  "metrics": [
+    {
+      "name": "3% windage median error 6 h (km)",
+      "value": 5.02,
+      "provenance": "Cross-coefficient common cases, n=182."
+    },
+    {
+      "name": "3% windage median error 12 h (km)",
+      "value": 9.24,
+      "provenance": "Common cases, n=175."
+    },
+    {
+      "name": "3% windage median error 24 h (km)",
+      "value": 16.07,
+      "provenance": "Common cases, n=170."
+    },
+    {
+      "name": "3% windage median error 48 h (km)",
+      "value": 27.24,
+      "provenance": "Common cases, n=158."
+    },
+    {
+      "name": "Persistence median error 48 h (km)",
+      "value": 30.96,
+      "provenance": "Same common cases, n=158."
+    },
+    {
+      "name": "Causal-velocity median error 48 h (km)",
+      "value": 35.19,
+      "provenance": "Same common cases, n=158."
+    }
+  ],
+  "limitations": [
+    "All four tracks are one July-August 2018 deployment episode near Puerto Rico; rolling cases overlap heavily, so case counts are not independent samples.",
+    "Forcing is retrospective reanalysis (daily-mean currents, hourly reanalysis wind), not an as-issued forecast.",
+    "No 500 m or sub-kilometre positional skill and no St Kitts validation is claimed; final claims require another deployment.",
+    "Provider track metadata has unresolved caveats, so no period is treated as confirmed.",
+    "The best coefficient is selected in-sample on the same cases it is scored on; see the validation record, where it only partly held up.",
+    "The sweep is a prespecified sensitivity analysis, not a fitted model."
+  ],
+  "evidence": [
+    {
+      "summary": "Aggregate summary and cross-coefficient comparison of the sweep results file.",
+      "source_path": "artifacts/subkm_putman_hindcast/windage_sweep_v1/results.json",
+      "sha256": "a43b6309eac9ba23de37085f97ff70ece9ff3487e8fd2b08a84d3df41540f361",
+      "commit": "1a4a5e6"
+    }
+  ]
+}

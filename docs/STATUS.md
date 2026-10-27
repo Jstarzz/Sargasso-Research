@@ -4,9 +4,9 @@
 
 A signed protocol fixes an issue window from 25 September 2026 through 14 January 2027. Candidate C and a persistence baseline are issued daily and scored against later observations. **No interim skill numbers are published; none will be until the window closes.** If fewer than 30 cases or 4 time blocks are scored, the protocol records INSUFFICIENT_EVIDENCE rather than extending the window.
 
-## Sub-kilometre coastal forecasting feasibility (St. Kitts, Putman GPS / physics hindcast)
+## Sub-kilometre coastal forecasting feasibility (Putman GPS tracks)
 
-Phase 1 was announced as in progress on 19 September 2026. **This archive holds no completion record for it, and its status has not been re-confirmed since.** The separate windage calibration on Putman mat tracks is a different, completed study: see the [windage calibration record](../experiments/m2-putman-windage-calibration-2026-09-27/README.md).
+Four frozen-protocol retrospective hindcast phases ran on 19 to 20 September 2026: [currents only](../experiments/subkm-putman-currents-only-2026-09-20/README.md), [windage sweep](../experiments/subkm-putman-windage-sweep-2026-09-20/README.md), [windage validation](../experiments/subkm-putman-windage-validation-2026-09-20/README.md) and [Stokes drift](../experiments/subkm-putman-stokes-2026-09-20/README.md). They support at most a modest windage effect on one 2018 deployment near Puerto Rico. **No 500 m or sub-kilometre skill, and no St Kitts validation, is claimed.** The earlier "in progress" status of 19 September is superseded.
 
 ## Evidence boundaries since the last release
 

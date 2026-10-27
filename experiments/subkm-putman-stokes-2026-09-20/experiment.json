@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "subkm-putman-stokes-2026-09-20",
+  "status": "completed",
+  "date_note": "",
+  "citations": [],
+  "title": "Sub-kilometre feasibility Phase 4: adding wave Stokes drift",
+  "date": "2026-09-20",
+  "scope": "Currents, fixed 3 percent windage and reanalysis surface Stokes drift versus the same run without Stokes drift, on identical cases.",
+  "summary": "Adding Stokes drift made no material difference at 6 and 12 h (median change -0.24 and +0.04 km) and made errors worse at 24 and 48 h (median change +0.80 km on 155 cases and +4.98 km on 133 cases). At 48 h the waves composite scored 30.89 km versus 30.87 km for persistence.",
+  "outcome": "negative",
+  "metrics": [
+    {
+      "name": "Median change from adding Stokes, 6 h (km)",
+      "value": -0.24,
+      "provenance": "Identical common-support cases, n=167; positive is worse."
+    },
+    {
+      "name": "Median change from adding Stokes, 12 h (km)",
+      "value": 0.04,
+      "provenance": "n=161."
+    },
+    {
+      "name": "Median change from adding Stokes, 24 h (km)",
+      "value": 0.8,
+      "provenance": "n=155."
+    },
+    {
+      "name": "Median change from adding Stokes, 48 h (km)",
+      "value": 4.98,
+      "provenance": "n=133."
+    },
+    {
+      "name": "Waves composite median error 48 h (km)",
+      "value": 30.89,
+      "provenance": "Identical cases, n=133."
+    }
+  ],
+  "limitations": [
+    "All four tracks are one July-August 2018 deployment episode near Puerto Rico; rolling cases overlap heavily, so case counts are not independent samples.",
+    "Forcing is retrospective reanalysis (daily-mean currents, hourly reanalysis wind), not an as-issued forecast.",
+    "No 500 m or sub-kilometre positional skill and no St Kitts validation is claimed; final claims require another deployment.",
+    "Provider track metadata has unresolved caveats, so no period is treated as confirmed.",
+    "The 3 percent windage was not re-estimated after adding Stokes drift, so part of it may already absorb wave drift.",
+    "Tides are not included."
+  ],
+  "evidence": [
+    {
+      "summary": "Summary and marginal-effect blocks of the waves results file.",
+      "source_path": "artifacts/subkm_putman_hindcast/waves_v1/results.json",
+      "sha256": "0de4aefb0ad261783d221093ec4b2cfb6c0061718ffb8ecac46a0d63d59d0742",
+      "commit": "919b608"
+    }
+  ]
+}
