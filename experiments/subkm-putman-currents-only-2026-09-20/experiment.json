@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "subkm-putman-currents-only-2026-09-20",
+  "status": "completed",
+  "date_note": "",
+  "citations": [],
+  "title": "Sub-kilometre feasibility Phase 1: currents-only hindcast on Putman GPS tracks",
+  "date": "2026-09-20",
+  "scope": "Retrospective drift hindcast of four natural Sargassum mat GPS tracks with reanalysis surface currents only, horizons 6, 12, 24 and 48 hours.",
+  "summary": "Currents-only transport underperformed both persistence and a causal-velocity baseline at every horizon. Median endpoint error was 6.59, 12.80, 23.71 and 43.53 km at 6, 12, 24 and 48 h, versus 5.23, 9.69, 17.18 and 30.87 km for persistence on the same cases.",
+  "outcome": "negative",
+  "metrics": [
+    {
+      "name": "Currents-only median error 6 h (km)",
+      "value": 6.59,
+      "provenance": "Putman rolling cases, same-case comparison."
+    },
+    {
+      "name": "Currents-only median error 12 h (km)",
+      "value": 12.8,
+      "provenance": "Same cases."
+    },
+    {
+      "name": "Currents-only median error 24 h (km)",
+      "value": 23.71,
+      "provenance": "Same cases."
+    },
+    {
+      "name": "Currents-only median error 48 h (km)",
+      "value": 43.53,
+      "provenance": "Same cases."
+    },
+    {
+      "name": "Persistence median error 6 h (km)",
+      "value": 5.23,
+      "provenance": "Same cases."
+    },
+    {
+      "name": "Persistence median error 12 h (km)",
+      "value": 9.69,
+      "provenance": "Same cases."
+    },
+    {
+      "name": "Persistence median error 24 h (km)",
+      "value": 17.18,
+      "provenance": "Same cases."
+    },
+    {
+      "name": "Persistence median error 48 h (km)",
+      "value": 30.87,
+      "provenance": "Same cases."
+    }
+  ],
+  "limitations": [
+    "All four tracks are one July-August 2018 deployment episode near Puerto Rico; rolling cases overlap heavily, so case counts are not independent samples.",
+    "Forcing is retrospective reanalysis (daily-mean currents, hourly reanalysis wind), not an as-issued forecast.",
+    "No 500 m or sub-kilometre positional skill and no St Kitts validation is claimed; final claims require another deployment.",
+    "Provider track metadata has unresolved caveats, so no period is treated as confirmed.",
+    "No confidence interval is reported; matched pairs numbered 203, 198, 190 and 176 at the four horizons before land-mask exclusions."
+  ],
+  "evidence": [
+    {
+      "summary": "Aggregate comparison block of the Phase 1 results file.",
+      "source_path": "artifacts/subkm_putman_hindcast/currents_only_v1/results.json",
+      "sha256": "d274df798f83087fff050f273cf02129bef9104f49ae9d56e1543eb83ccfa9a9",
+      "commit": "f748028"
+    }
+  ]
+}

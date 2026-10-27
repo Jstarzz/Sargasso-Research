@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "subkm-putman-windage-validation-2026-09-20",
+  "status": "completed",
+  "date_note": "",
+  "citations": [],
+  "title": "Sub-kilometre feasibility Phase 3: dependence-aware validation of the 3 percent windage finding",
+  "date": "2026-09-20",
+  "scope": "Leave-one-track-out and purged forward-time validation of the windage coefficient chosen in the sweep.",
+  "summary": "The 3 percent finding only partially held up. Under leave-one-track-out, 3 percent was selected on all four training folds, and on held-out tracks it beat persistence in 9 of 16 meaningful horizon cells and causal velocity in 3 of 4 meaningful 48 h cells. Under a purged forward-time split, the fit period selected 2 percent, and on the later test period it beat persistence in 0 of 4 cells and causal velocity in 0 of 1.",
+  "outcome": "negative",
+  "metrics": [
+    {
+      "name": "LOTO folds selecting 3 percent",
+      "value": 4,
+      "provenance": "Out of 4 folds."
+    },
+    {
+      "name": "LOTO held-out cells beating persistence",
+      "value": 9,
+      "provenance": "Out of 16 meaningful cells (at least 10 cases)."
+    },
+    {
+      "name": "LOTO held-out 48 h cells beating causal velocity",
+      "value": 3,
+      "provenance": "Out of 4 meaningful cells."
+    },
+    {
+      "name": "Forward-time cells beating persistence",
+      "value": 0,
+      "provenance": "Out of 4 meaningful cells."
+    },
+    {
+      "name": "Forward-time 48 h cells beating causal velocity",
+      "value": 0,
+      "provenance": "Out of 1 meaningful cell."
+    }
+  ],
+  "limitations": [
+    "All four tracks are one July-August 2018 deployment episode near Puerto Rico; rolling cases overlap heavily, so case counts are not independent samples.",
+    "Forcing is retrospective reanalysis (daily-mean currents, hourly reanalysis wind), not an as-issued forecast.",
+    "No 500 m or sub-kilometre positional skill and no St Kitts validation is claimed; final claims require another deployment.",
+    "Provider track metadata has unresolved caveats, so no period is treated as confirmed.",
+    "Leave-one-track-out folds share one deployment event and are not independent replications; a forward-time split of the same event is not independent either.",
+    "Both schemes are exploratory diagnostics, not confirmatory validation."
+  ],
+  "evidence": [
+    {
+      "summary": "Verdict fields of the validation results file; the sweep medians reproduce the sweep file exactly.",
+      "source_path": "artifacts/subkm_putman_hindcast/windage_validation_v1/results.json",
+      "sha256": "aa20d841ea3e9f536d13768824b5002b604522328fe52968cd9117297dfaa6c8",
+      "commit": "b294683"
+    }
+  ]
+}

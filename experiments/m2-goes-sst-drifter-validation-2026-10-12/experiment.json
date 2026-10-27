@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "m2-goes-sst-drifter-validation-2026-10-12",
+  "status": "completed",
+  "date_note": "",
+  "citations": [],
+  "title": "Model 2 GOES SST-pattern motion versus drifters: not supported",
+  "date": "2026-10-12",
+  "scope": "Retrospective co-motion check of GOES sea-surface-temperature pattern shifts against archived drifter six-hour displacements, under a frozen protocol.",
+  "summary": "Only 8 of 157 eligible primary (drogued, April to September) windows passed the acceptance filters (5.1%), covering 4 drifter clusters, too few for an interval. Vector RMSE was 0.3310 m/s versus 0.2925 m/s for a zero-vector diagnostic, with a median angular separation of 81.1 degrees. The result does not justify building a GOES-motion module. A secondary undrogued stratum (118 windows, 28 drifters) had RMSE 0.2309 versus 0.2503 m/s (clustered 95% interval 0.2008 to 0.2654) and does not rescue the primary result.",
+  "outcome": "negative",
+  "metrics": [
+    {
+      "name": "Primary eligible windows",
+      "value": 157,
+      "provenance": "Drogued drifters, April to September."
+    },
+    {
+      "name": "Primary accepted windows",
+      "value": 8,
+      "provenance": "5.1% of eligible; 4 drifter clusters; no interval emitted."
+    },
+    {
+      "name": "SST-pattern vector RMSE (m/s)",
+      "value": 0.331,
+      "provenance": "Primary accepted windows."
+    },
+    {
+      "name": "Zero-vector diagnostic RMSE (m/s)",
+      "value": 0.2925,
+      "provenance": "Same windows; diagnostic, not forecast skill."
+    },
+    {
+      "name": "Median angular separation (degrees)",
+      "value": 81.1,
+      "provenance": "Primary accepted windows."
+    },
+    {
+      "name": "Secondary undrogued vector RMSE (m/s)",
+      "value": 0.2309,
+      "provenance": "118 accepted windows, 28 drifters; zero-vector 0.2503."
+    }
+  ],
+  "limitations": [
+    "The source report is an untracked working-tree file; it is identified by SHA-256 only and has no source commit.",
+    "Historically exposed drifter development data, not independent confirmation.",
+    "The tile uses the observed endpoint midpoint in hindsight; this is neither forecast skill nor serving qualification.",
+    "Two acceptance filters (correlation and search boundary) were new preregistered rules; cloud support dominates attrition.",
+    "The result does not show that SST-pattern co-motion is false in general."
+  ],
+  "evidence": [
+    {
+      "summary": "Section 4q of the final delivery report v10, scored from a nested formatted run after source hash receipts verified.",
+      "source_path": "artifacts/eval_loop/final_delivery_v10/report.md",
+      "sha256": "73ed4f09fb2cf5e38d248d53d26277fee22241c737acc6b73987db4e47380a9d",
+      "commit": null
+    }
+  ]
+}

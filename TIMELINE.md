@@ -1077,9 +1077,235 @@ Current handoff preserves frozen C and R46/R47 and R18 selections. No new traini
 
 - Current handoff preserves frozen C and R46/R47 and R18 selections. Current active research status additionally uses the separately disclosed owner declaration.; Source label: `docs/handoff.md` (private historical source; provenance only); SHA-256: `c40fdaf827f7d74f30f393280be8c16a88493b7e4f7f3f1b696fd8e3751b8b23`; Source commit: `f4b47afee0c60a821dd067fdf97948f8a6c936af`
 
-### 2026-09-19 — Putman GPS / physics sub-kilometre feasibility, Phase 1 — IN PROGRESS
+### 2026-09-20 — Sub-kilometre feasibility Phase 1: currents-only hindcast on Putman GPS tracks
 
-**IN PROGRESS** · Currents-only retrospective hindcast using real 2018 GLORYS and frozen Putman rolling GPS cases for St Kitts feasibility. User confirms a background worker is running; no outcomes or unfinished metrics published. No model training is active.
+**COMPLETED** · Retrospective drift hindcast of four natural Sargassum mat GPS tracks with reanalysis surface currents only, horizons 6, 12, 24 and 48 hours.
+
+Currents-only transport underperformed both persistence and a causal-velocity baseline at every horizon. Median endpoint error was 6.59, 12.80, 23.71 and 43.53 km at 6, 12, 24 and 48 h, versus 5.23, 9.69, 17.18 and 30.87 km for persistence on the same cases.
+
+- [Sub-kilometre feasibility Phase 1: currents-only hindcast on Putman GPS tracks](experiments/subkm-putman-currents-only-2026-09-20/experiment.json)
+
+**Provenance**
+
+- Aggregate comparison block of the Phase 1 results file.; Source label: `artifacts/subkm_putman_hindcast/currents_only_v1/results.json` (private historical source; provenance only); SHA-256: `d274df798f83087fff050f273cf02129bef9104f49ae9d56e1543eb83ccfa9a9`; Source commit: `f748028`
+
+### 2026-09-20 — Sub-kilometre feasibility Phase 4: adding wave Stokes drift
+
+**COMPLETED** · Currents, fixed 3 percent windage and reanalysis surface Stokes drift versus the same run without Stokes drift, on identical cases.
+
+Adding Stokes drift made no material difference at 6 and 12 h (median change -0.24 and +0.04 km) and made errors worse at 24 and 48 h (median change +0.80 km on 155 cases and +4.98 km on 133 cases). At 48 h the waves composite scored 30.89 km versus 30.87 km for persistence.
+
+- [Sub-kilometre feasibility Phase 4: adding wave Stokes drift](experiments/subkm-putman-stokes-2026-09-20/experiment.json)
+
+**Provenance**
+
+- Summary and marginal-effect blocks of the waves results file.; Source label: `artifacts/subkm_putman_hindcast/waves_v1/results.json` (private historical source; provenance only); SHA-256: `0de4aefb0ad261783d221093ec4b2cfb6c0061718ffb8ecac46a0d63d59d0742`; Source commit: `919b608`
+
+### 2026-09-20 — Sub-kilometre feasibility Phase 2: currents plus fixed windage sweep
+
+**COMPLETED** · Prespecified sweep of 0, 1, 2 and 3 percent of reanalysis 10 m wind added to reanalysis currents, scored on the intersection of cases valid under all four coefficients.
+
+Adding windage improved on currents-only at every horizon, and 3 percent was best at all four. At 48 h, 3 percent gave a 27.24 km median on 158 cases versus 30.96 km for persistence and 35.19 km for causal velocity. At 6, 12 and 24 h it beat persistence (5.02 vs 5.26, 9.24 vs 9.69, 16.07 vs 17.18 km) but not causal velocity (3.96, 7.20, 15.80 km).
+
+- [Sub-kilometre feasibility Phase 2: currents plus fixed windage sweep](experiments/subkm-putman-windage-sweep-2026-09-20/experiment.json)
+
+**Provenance**
+
+- Aggregate summary and cross-coefficient comparison of the sweep results file.; Source label: `artifacts/subkm_putman_hindcast/windage_sweep_v1/results.json` (private historical source; provenance only); SHA-256: `a43b6309eac9ba23de37085f97ff70ece9ff3487e8fd2b08a84d3df41540f361`; Source commit: `1a4a5e6`
+
+### 2026-09-20 — Sub-kilometre feasibility Phase 3: dependence-aware validation of the 3 percent windage finding
+
+**COMPLETED** · Leave-one-track-out and purged forward-time validation of the windage coefficient chosen in the sweep.
+
+The 3 percent finding only partially held up. Under leave-one-track-out, 3 percent was selected on all four training folds, and on held-out tracks it beat persistence in 9 of 16 meaningful horizon cells and causal velocity in 3 of 4 meaningful 48 h cells. Under a purged forward-time split, the fit period selected 2 percent, and on the later test period it beat persistence in 0 of 4 cells and causal velocity in 0 of 1.
+
+- [Sub-kilometre feasibility Phase 3: dependence-aware validation of the 3 percent windage finding](experiments/subkm-putman-windage-validation-2026-09-20/experiment.json)
+
+**Provenance**
+
+- Verdict fields of the validation results file; the sweep medians reproduce the sweep file exactly.; Source label: `artifacts/subkm_putman_hindcast/windage_validation_v1/results.json` (private historical source; provenance only); SHA-256: `aa20d841ea3e9f536d13768824b5002b604522328fe52968cd9117297dfaa6c8`; Source commit: `b294683`
+
+### 2026-09-24 — Prospective daily shadow evaluation of frozen C - IN PROGRESS
+
+**IN PROGRESS** · Model 2
+
+### 2026-09-27 — Model 2 windage calibration on Putman GPS mat tracks
+
+**COMPLETED** · Wind-only and current-plus-wind drift endpoint errors for four natural Sargassum mat tracks, used to calibrate the windage coefficient.
+
+On four natural mat GPS tracks (2018), a wind-only windage near 0.02 beat the frozen 0.005 coefficient and persistence. Leave-one-track-out median endpoint error at 24 h was 11.59 km (n=47) versus 15.67 km for the frozen coefficient and 17.54 km for persistence; at 48 h, 28.67 km (n=22) versus 35.53 km and 35.99 km; at 6 h, 4.01 km (n=203) versus 4.66 km and 4.91 km.
+
+- [Model 2 windage calibration on Putman GPS mat tracks](experiments/m2-putman-windage-calibration-2026-09-27/experiment.json)
+
+**Provenance**
+
+- Aggregate calibration table from the windage study summary.; Source label: `artifacts/m2_physics_cal/putman/summary.md` (private historical source; provenance only); SHA-256: `75414fe7c851fff1db1811bd45eb1e860e746e4c49afd7ddef247d376de68db8`; Source commit: `e76a017`
+
+### 2026-09-29 — Once-only June-September 2026 final check failed and its cohort was consumed
+
+**COMPLETED** · Models 2 and 3
+
+The signed once-only evaluation of the improved Model 2 and Model 3 candidates on the June-September 2026 cohort crashed after in-memory Model 2 scoring because of a stretch-climatology input bug. No score tables or verdicts were persisted, and the in-memory numbers are declared not reportable. The cohort is consumed and cannot be reused as untouched evidence. The later C3, C and P comparison on that cohort is a disclosed second look, not confirmation.
+
+
+**Provenance**
+
+- Failure incident record with run state, cohort custody and integrity hashes.; Source label: `artifacts/sprint_final_check/failure_incident_20260929.md` (private historical source; provenance only); SHA-256: `aa3999204eb20f688c44f63877b838dd134eee39581c691fda216b418d8bb0e8`; Source commit: `202c028`
+
+### 2026-09-29 — Model 1 R49 versus production ensemble on the official land-guarded test
+
+**COMPLETED** · Model 1 data-only R49 retrain compared with the R46+R47 mean-probability ensemble on the historical land-guarded test split.
+
+On the official land-guarded test split with the serving land mask, R49 scored IoU 0.5527 versus 0.6232 for the selected R46+R47 ensemble (ensemble ahead by 0.1003). Unmasked, R49 scored 0.5519 versus 0.5229. The ensemble result does not reproduce the historical 0.6440 headline (difference -0.0208, outside the documented run-to-run range of about 0.01).
+
+- [Model 1 R49 versus selected ensemble on the official land-guarded test](experiments/m1-r49-official-landguard-test-2026-09-29/experiment.json)
+
+**Provenance**
+
+- Aggregate land-guarded test table in the R49 evaluation summary.; Source label: `artifacts/m1_r49/r49_20260928T155935Z/summary_v2.md` (private historical source; provenance only); SHA-256: `ccb5be338a91b30595ade8cee4256bf46df28256286a88444a789e728de0ca80`; Source commit: `202c028`
+
+### 2026-09-29 — R49 SKN serving-mask evaluation against production
+
+**COMPLETED** · Model 1 comparison of R49 with the production R46+R47 mean-probability ensemble on the SKN evaluation cohort under the serving land mask.
+
+On 129 paired SKN scenes evaluated with the serving land mask, R49 achieved IoU 0.3903 versus 0.2148 for the production R46+R47 mean-probability ensemble. The paired difference was +0.1755 with a 95% interval of [0.0928, 0.2500].
+
+- [R49 SKN serving-mask evaluation against production](experiments/m1-r49-skn-serving-eval-2026-09-29/experiment.json)
+
+**Provenance**
+
+- Sanitized source index with aggregate R49 and production SKN serving-mask results and their paired interval.; Source label: `artifacts/sprint_final_check/model_results_20260929.md` (private historical source; provenance only); SHA-256: `ace3af28e824aea618a1652273cb37561d2b713317c77847890e34b9c267f515`; Source commit: `202c028`
+
+### 2026-09-29 — Model 2 C3 recovery comparison
+
+**COMPLETED** · Aggregate Model 2 recovery comparison of C3, C, and P on the previously exposed June-September 2026 cohort.
+
+On 70 admitted pairs in a disclosed second look, mean IoU was 0.58914 for C3, 0.58316 for C, and 0.46878 for P. C3 minus C was +0.005985 with a 14-day interval of [-0.005435, 0.015853], a NO_PASS result. C3 minus P was +0.12036 with an interval of [0.10256, 0.14324].
+
+- [Model 2 C3 recovery comparison](experiments/m2-c3-recovery-2026-09-29/experiment.json)
+
+**Provenance**
+
+- Sanitized source index with aggregate C3, C, and P metrics and intervals.; Source label: `artifacts/sprint_final_check/model_results_20260929.md` (private historical source; provenance only); SHA-256: `ace3af28e824aea618a1652273cb37561d2b713317c77847890e34b9c267f515`; Source commit: `202c028`
+
+### 2026-09-29 — Model 2 C3-OT: windage 0.04 with Sinkhorn and soft-Dice loss
+
+**COMPLETED** · Model 2 residual-correction training variant compared with the C2w recipe on development folds.
+
+Adding a Sinkhorn (km-distance) loss plus heavier soft-Dice (lambda=1) to the windage-0.04 recipe lost IoU to C2w by 0.063 on the 2023 fold and 0.019 on the 2022 fold, while improving median miss distance by 4.8 km and 1.8 km. The variant was shelved.
+
+- [Model 2 C3-OT: windage 0.04 with Sinkhorn and soft-Dice loss](experiments/m2-c3ot-sinkhorn-2026-09-29/experiment.json)
+
+**Provenance**
+
+- Dated sprint-log entry recording the fold deltas and the shelving decision.; Source label: `docs/sprint_20260927.md` (private historical source; provenance only); SHA-256: `5824614df21ced9c7d3059e9d42ae8f3f606417598137bab8b78961b18d2074f`; Source commit: `14093d2`
+
+### 2026-09-29 — Model 3 island and coastal stretch recovery results
+
+**COMPLETED** · Aggregate Model 3 island and coastal stretch risk comparisons in the previously exposed June-September 2026 recovery cohort.
+
+In a disclosed second look, island v3 had 154, 155, 151, and 149 positives at 2, 3, 5, and 7 days, with zero negatives at every horizon, leaving AUC evidence insufficient. For coastal stretch, the primary 7-day comparison on n=419 had v3 AUC 0.59556 versus climatology K 0.50798, a delta of +0.08759 with 95% interval [-0.02779, 0.14468], which is inconclusive. The descriptive 2-day comparison on n=431 had delta +0.11593 with interval [0.02681, 0.17622].
+
+- [Model 3 island and coastal stretch recovery results](experiments/m3-recovery-island-stretch-2026-09-29/experiment.json)
+
+**Provenance**
+
+- Sanitized source index with aggregate island counts, island AUC limitation, and coastal stretch comparisons.; Source label: `artifacts/sprint_final_check/model_results_20260929.md` (private historical source; provenance only); SHA-256: `ace3af28e824aea618a1652273cb37561d2b713317c77847890e34b9c267f515`; Source commit: `202c028`
+
+### 2026-10-06 — Model 2 midpoint of current and wind physics: pre-registered drifter test
+
+**COMPLETED** · Parameter-free 50:50 midpoint of the current-coupled and wind-only 2 percent forecasts, scored on archived undrogued surface drifters. Drifters are an analogue, not Sargassum.
+
+Registered before any drifter was scored, the midpoint beat both comparators at 24, 48 and 72 h. Paired median endpoint difference versus current plus 2% wind: -2.29 km (24 h, 1,565 cases, 46 drifters), -4.88 km (48 h, 1,405 cases, 45 drifters), -6.76 km (72 h, 1,249 cases, 42 drifters), all with whole-drifter 95% intervals excluding zero. Median errors were 13.8, 25.8 and 36.0 km versus 16.2, 29.8 and 41.2 km. On Sargassum GPS tracks the same line of work was not confirmed.
+
+- [Model 2 midpoint of current and wind physics: pre-registered drifter test](experiments/m2-midpoint-drifter-confirmation-2026-10-06/experiment.json)
+
+**Provenance**
+
+- Pre-registered midpoint test on drifters, final delivery report v9 section 6.; Source label: `artifacts/eval_loop/final_delivery_v9/report.md` (private historical source; provenance only); SHA-256: `f07759331c26755e65a26f5d40e9ef0873404583a455c1b9a07a79524b40247d`
+
+### 2026-10-06 — Model 2 R18 neural correction: clean re-evaluation matches a constant-shift control
+
+**COMPLETED** · Model 2 R18 seed 11 learned correction versus physics and a constant-vector control on 19 held-out Sentinel-2 pairs, plus a footprint-aware pair benchmark.
+
+On 19 held-out pairs, centroid error was 43.5 km for wind-only physics, 47.9 km for current-coupled physics, 28.8 km for R18 seed 11 and 25.9 km for the mean of 20 seeds. Wind-only physics plus one constant 37.8 km eastward shift scored 23.6 km, so the network adds nothing beyond a constant shift. This challenges the earlier R18 result, but the sample is small and the project documents do not yet agree on R18 status. In a footprint-corrected benchmark (42 pairs scored by every arm, 72 h) no arm was distinguishable from persistence.
+
+- [Model 2 R18 neural correction: clean re-evaluation matches a constant-shift control](experiments/m2-r18-clean-reevaluation-2026-10-06/experiment.json)
+
+**Provenance**
+
+- Clean R18 re-evaluation, footprint analysis and pair benchmark in the final delivery report v8, sections 1 to 3.; Source label: `artifacts/eval_loop/final_delivery_v8/report.md` (private historical source; provenance only); SHA-256: `ea9e8f46301fed4cb2a19b2e6062872b790bb47b248dc09a11fae81f34a1adfd`
+
+### 2026-10-06 — R18 learned correction challenged by a clean re-evaluation
+
+**COMPLETED** · Model 2
+
+A clean re-evaluation on 19 held-out pairs found R18 no better than adding a constant shift to wind-only physics, and showed pair offsets track image footprint. This challenges earlier R18 results but is a small, exposed sample and the project documents do not yet agree on R18 status, so earlier R18 records are kept as published and should be read with this caveat. The best-supported Model 2 configuration in the same work is the parameter-free midpoint of current-coupled and wind-only 2 percent physics, confirmed on drifters but not on Sargassum tracks.
+
+- [Model 2 R18 neural correction: clean re-evaluation matches a constant-shift control](experiments/m2-r18-clean-reevaluation-2026-10-06/experiment.json)
+
+**Provenance**
+
+- Final delivery report v8 sections 1 to 3 and report v10 status notes.; Source label: `artifacts/eval_loop/final_delivery_v8/report.md` (private historical source; provenance only); SHA-256: `ea9e8f46301fed4cb2a19b2e6062872b790bb47b248dc09a11fae81f34a1adfd`
+
+### 2026-10-11 — Model 3: no verified beach truth, so skill cannot be measured
+
+**COMPLETED** · Attempt to build a second Model 3 benchmark from data on disk for 17 accepted beach geometries in the St Kitts and Nevis study area.
+
+The benchmark yields 1,003 site-by-pass cases: 0 positive, 37 filtered-empty and 966 unknown. The only available truth is the same satellite pass the prediction uses, which is circular, and none of 14,086 citizen reports fall in the study area. Model 3 skill is therefore Unknown, not zero. Dated beach presence or absence observations paired with forecasts frozen beforehand are required.
+
+- [Model 3: no verified beach truth, so skill cannot be measured](experiments/m3-beach-truth-blocked-2026-10-11/experiment.json)
+
+**Provenance**
+
+- Section 4e of the final delivery report v10.; Source label: `artifacts/eval_loop/final_delivery_v10/report.md` (private historical source; provenance only); SHA-256: `73ed4f09fb2cf5e38d248d53d26277fee22241c737acc6b73987db4e47380a9d`
+
+### 2026-10-12 — Model 1: would dropping R47 cost anything? Registered ensemble alternatives
+
+**COMPLETED** · Registered non-inferiority test of R46 alone and R46+R49 against the selected R46+R47 ensemble on the land-guarded test (173 scenes) and the SKN test (129 scenes).
+
+Neither registered candidate passed. R46 alone scored -0.012 IoU versus the selected ensemble on the land-guarded test (interval -0.018 to -0.006) and -0.026 on the SKN test. R46+R49 scored -0.018 on the land-guarded test (interval -0.029 to -0.006) and +0.064 on the SKN test (interval +0.013 to +0.129). Selected R46+R47 remains selected. The control reproduced production at 0.6232 and 0.2146.
+
+- [Model 1: would dropping R47 cost anything? Registered ensemble alternatives](experiments/m1-ensemble-alternatives-2026-10-12/experiment.json)
+
+**Provenance**
+
+- Section 4o of the final delivery report v10 with pre-registered rule and control gate.; Source label: `artifacts/eval_loop/final_delivery_v10/report.md` (private historical source; provenance only); SHA-256: `73ed4f09fb2cf5e38d248d53d26277fee22241c737acc6b73987db4e47380a9d`
+
+### 2026-10-12 — Model 2 GOES SST-pattern motion versus drifters: not supported
+
+**COMPLETED** · Retrospective co-motion check of GOES sea-surface-temperature pattern shifts against archived drifter six-hour displacements, under a frozen protocol.
+
+Only 8 of 157 eligible primary (drogued, April to September) windows passed the acceptance filters (5.1%), covering 4 drifter clusters, too few for an interval. Vector RMSE was 0.3310 m/s versus 0.2925 m/s for a zero-vector diagnostic, with a median angular separation of 81.1 degrees. The result does not justify building a GOES-motion module. A secondary undrogued stratum (118 windows, 28 drifters) had RMSE 0.2309 versus 0.2503 m/s (clustered 95% interval 0.2008 to 0.2654) and does not rescue the primary result.
+
+- [Model 2 GOES SST-pattern motion versus drifters: not supported](experiments/m2-goes-sst-drifter-validation-2026-10-12/experiment.json)
+
+**Provenance**
+
+- Section 4q of the final delivery report v10, scored from a nested formatted run after source hash receipts verified.; Source label: `artifacts/eval_loop/final_delivery_v10/report.md` (private historical source; provenance only); SHA-256: `73ed4f09fb2cf5e38d248d53d26277fee22241c737acc6b73987db4e47380a9d`
+
+### 2026-10-14 — Model 1 training on hold; guarded validation blocked
+
+**COMPLETED** · Model 1
+
+Guarded validation masks (171 scenes, 5,000 patches) were built and fully verified, but evaluation stayed blocked because joined image, label and mask content, grid identity and guarded-label derivation are not yet qualified. No Model 1 training is active and no promotion is supported. Human adjudication of the review queue (300 cases) has recorded zero verdicts.
+
+
+**Provenance**
+
+- Handoff of 14 October 2026 and report v10 sections 4q to 4u.; Source label: `artifacts/eval_loop/final_delivery_v10/report.md` (private historical source; provenance only); SHA-256: `73ed4f09fb2cf5e38d248d53d26277fee22241c737acc6b73987db4e47380a9d`
+
+### 2026-10-16 — Model 2 coast-reach probabilities: calibrated on drifters
+
+**COMPLETED** · Probability that a drifting object crosses a stretch of line within a lead time, from a forecast track plus empirical error paths, tested across two historical periods.
+
+At 48 h the error-path ensemble scored Brier 0.00657 and 0.00663 across the two cross-period directions, versus 0.00687 and 0.00681 for a Gaussian spread, 0.00958 and 0.00960 for the single forecast track, and 0.01025 and 0.01022 for climatology (Brier skill versus climatology about 0.35 to 0.36). At 120 h: 0.0182 and 0.0184 versus Gaussian 0.0194 and 0.0192 (skill 0.24). Forecast probabilities matched observed frequencies across the range, for example forecasts of 0.55 came true 55% of the time at 48 h. The single track is overconfident and worse than climatology beyond about 72 h.
+
+- [Model 2 coast-reach probabilities: calibrated on drifters](experiments/m2-crossing-probabilities-2026-10-16/experiment.json)
+
+**Provenance**
+
+- Section 4u of the final delivery report v10.; Source label: `artifacts/eval_loop/final_delivery_v10/report.md` (private historical source; provenance only); SHA-256: `73ed4f09fb2cf5e38d248d53d26277fee22241c737acc6b73987db4e47380a9d`
 
 ## Undated records
 

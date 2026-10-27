@@ -45,9 +45,7 @@ The [full documented timeline](TIMELINE.md) starts with the earliest recoverable
 
 ## Work in progress
 
-**IN PROGRESS:** sub-kilometre coastal forecasting feasibility for St. Kitts: Phase 1 currents-only retrospective hindcasts with real 2018 GLORYS currents, evaluated against frozen Putman rolling GPS cases. **No results from this ongoing benchmark are published.**
-
-There is no active model-training run as of the author's 19 September 2026 status confirmation. See [current status](docs/STATUS.md).
+**IN PROGRESS:** a signed prospective daily shadow evaluation of the frozen Model 2 candidate runs through 14 January 2027. **No interim results are published.** The sub-kilometre feasibility hindcasts are complete and record no sub-kilometre skill; see [current status](docs/STATUS.md).
 
 ## Reproduce the public archive
 
