@@ -1,5 +1,7 @@
 # Research status — 27 October 2026
 
+The newest dated research record in the sources is 16 October 2026.
+
 ## IN PROGRESS: prospective daily shadow evaluation of frozen Model 2 candidate C
 
 A signed protocol fixes an issue window from 25 September 2026 through 14 January 2027. Candidate C and a persistence baseline are issued daily and scored against later observations. **No interim skill numbers are published; none will be until the window closes.** If fewer than 30 cases or 4 time blocks are scored, the protocol records INSUFFICIENT_EVIDENCE rather than extending the window.
@@ -12,7 +14,9 @@ Four frozen-protocol retrospective hindcast phases ran on 19 to 20 September 202
 
 - The once-only June-September 2026 final check failed on 29 September and its cohort was consumed. The later C3 versus C and P comparison on that cohort is a disclosed second look and did not pass against C. See the [timeline entry](../TIMELINE.md).
 - R49 beat the production Model 1 ensemble on the SKN cohort but lost on the historical official test. See both R49 records in the [experiment index](../EXPERIMENTS.md).
-- No selected model or serving scope changed.
+- A clean re-evaluation on 6 October found the R18 learned correction no better than a constant shift; earlier records that treat it as validated are superseded. See the [R18 record](../experiments/m2-r18-clean-reevaluation-2026-10-06/README.md).
+- Model 1 training is on hold and guarded validation remains blocked as of 14 October. Model 3 skill is unmeasurable without verified beach observations.
+- No model has been promoted and no serving scope changed.
 
 ## Scope of this archive
 

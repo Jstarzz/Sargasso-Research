@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": "m2-midpoint-drifter-confirmation-2026-10-06",
+  "status": "completed",
+  "date_note": "",
+  "citations": [],
+  "title": "Model 2 midpoint of current and wind physics: pre-registered drifter test",
+  "date": "2026-10-06",
+  "scope": "Parameter-free 50:50 midpoint of the current-coupled and wind-only 2 percent forecasts, scored on archived undrogued surface drifters. Drifters are an analogue, not Sargassum.",
+  "summary": "Registered before any drifter was scored, the midpoint beat both comparators at 24, 48 and 72 h. Paired median endpoint difference versus current plus 2% wind: -2.29 km (24 h, 1,565 cases, 46 drifters), -4.88 km (48 h, 1,405 cases, 45 drifters), -6.76 km (72 h, 1,249 cases, 42 drifters), all with whole-drifter 95% intervals excluding zero. Median errors were 13.8, 25.8 and 36.0 km versus 16.2, 29.8 and 41.2 km. On Sargassum GPS tracks the same line of work was not confirmed.",
+  "outcome": "mixed",
+  "metrics": [
+    {
+      "name": "Midpoint minus current plus 2% wind, 24 h (km)",
+      "value": -2.29,
+      "provenance": "Paired median; 95% whole-drifter interval -3.03 to -1.42; 1,565 cases, 46 drifters."
+    },
+    {
+      "name": "Midpoint minus current plus 2% wind, 48 h (km)",
+      "value": -4.88,
+      "provenance": "Interval -6.12 to -3.03; 1,405 cases, 45 drifters."
+    },
+    {
+      "name": "Midpoint minus current plus 2% wind, 72 h (km)",
+      "value": -6.76,
+      "provenance": "Interval -9.10 to -4.15; 1,249 cases, 42 drifters."
+    },
+    {
+      "name": "Midpoint median error 48 h (km)",
+      "value": 25.8,
+      "provenance": "Same cases."
+    },
+    {
+      "name": "Current plus 2% wind median error 48 h (km)",
+      "value": 29.8,
+      "provenance": "Same cases."
+    }
+  ],
+  "limitations": [
+    "The source report is an untracked working-tree file; it is identified by SHA-256 only and has no source commit.",
+    "Drifters are undrogued surface drifters, not floating Sargassum; mats move somewhat differently, and Sargassum GPS looks were NOT_CONFIRMED.",
+    "Forcing is archived analysis fields standing in for forecasts.",
+    "The same drifter product was used earlier in development of related arms; the midpoint itself was registered before scoring.",
+    "The run was stopped at 6,400 of 6,514 cases and resumed with the script resume path, completing all 6,514."
+  ],
+  "evidence": [
+    {
+      "summary": "Pre-registered midpoint test on drifters, final delivery report v9 section 6.",
+      "source_path": "artifacts/eval_loop/final_delivery_v9/report.md",
+      "sha256": "f07759331c26755e65a26f5d40e9ef0873404583a455c1b9a07a79524b40247d",
+      "commit": null
+    }
+  ]
+}

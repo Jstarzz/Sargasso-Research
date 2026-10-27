@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "m2-r18-clean-reevaluation-2026-10-06",
+  "status": "completed",
+  "date_note": "",
+  "citations": [],
+  "title": "Model 2 R18 neural correction: clean re-evaluation finds no benefit beyond a constant shift",
+  "date": "2026-10-06",
+  "scope": "Model 2 R18 seed 11 learned correction versus physics and a constant-vector control on 19 held-out Sentinel-2 pairs, plus a footprint-aware pair benchmark.",
+  "summary": "On 19 held-out pairs, centroid error was 43.5 km for wind-only physics, 47.9 km for current-coupled physics, 28.8 km for R18 seed 11 and 25.9 km for the mean of 20 seeds. Wind-only physics plus one constant 37.8 km eastward shift scored 23.6 km, so the network adds nothing beyond a constant shift. The earlier R18 selection is not supported as a learned correction. In a footprint-corrected benchmark (42 pairs scored by every arm, 72 h) no arm was distinguishable from persistence.",
+  "outcome": "negative",
+  "metrics": [
+    {
+      "name": "Wind-only physics centroid error (km)",
+      "value": 43.5,
+      "provenance": "19 held-out pairs."
+    },
+    {
+      "name": "Current-coupled physics centroid error (km)",
+      "value": 47.9,
+      "provenance": "19 held-out pairs."
+    },
+    {
+      "name": "R18 seed 11 centroid error (km)",
+      "value": 28.8,
+      "provenance": "19 held-out pairs."
+    },
+    {
+      "name": "Mean of 20 R18 seeds centroid error (km)",
+      "value": 25.9,
+      "provenance": "19 held-out pairs."
+    },
+    {
+      "name": "Wind-only physics plus constant shift (km)",
+      "value": 23.6,
+      "provenance": "Control: one constant vector equal to the mean training residual, 37.8 km east."
+    },
+    {
+      "name": "Benchmark windage 2% change versus persistence (km)",
+      "value": -3.38,
+      "provenance": "42 pairs scored by every arm at 72 h; 95% interval -8.38 to +1.04, includes zero."
+    }
+  ],
+  "limitations": [
+    "The source report is an untracked working-tree file; it is identified by SHA-256 only and has no source commit.",
+    "Pair offsets track the differing image footprints of the two scenes: pooled correlation 0.77 between footprint offset and forecast residual, so cross-orbit pairs conflate footprint with transport.",
+    "The planned common-footprint rescoring failed (timeout, then a crash) and its pre-registered criterion was never evaluated.",
+    "The pair benchmark is underpowered: only about 20% of predicted mass lands in the observed strip.",
+    "The only consistent signal is that east bias falls as windage rises toward 2 to 3 percent.",
+    "This supersedes the archive records that describe R18 as a validated selection."
+  ],
+  "evidence": [
+    {
+      "summary": "Clean R18 re-evaluation, footprint analysis and pair benchmark in the final delivery report v8, sections 1 to 3.",
+      "source_path": "artifacts/eval_loop/final_delivery_v8/report.md",
+      "sha256": "ea9e8f46301fed4cb2a19b2e6062872b790bb47b248dc09a11fae81f34a1adfd",
+      "commit": null
+    }
+  ]
+}

@@ -1212,6 +1212,101 @@ In a disclosed second look, island v3 had 154, 155, 151, and 149 positives at 2,
 
 - Sanitized source index with aggregate island counts, island AUC limitation, and coastal stretch comparisons.; Source label: `artifacts/sprint_final_check/model_results_20260929.md` (private historical source; provenance only); SHA-256: `ace3af28e824aea618a1652273cb37561d2b713317c77847890e34b9c267f515`; Source commit: `202c028`
 
+### 2026-10-06 — Model 2 midpoint of current and wind physics: pre-registered drifter test
+
+**COMPLETED** · Parameter-free 50:50 midpoint of the current-coupled and wind-only 2 percent forecasts, scored on archived undrogued surface drifters. Drifters are an analogue, not Sargassum.
+
+Registered before any drifter was scored, the midpoint beat both comparators at 24, 48 and 72 h. Paired median endpoint difference versus current plus 2% wind: -2.29 km (24 h, 1,565 cases, 46 drifters), -4.88 km (48 h, 1,405 cases, 45 drifters), -6.76 km (72 h, 1,249 cases, 42 drifters), all with whole-drifter 95% intervals excluding zero. Median errors were 13.8, 25.8 and 36.0 km versus 16.2, 29.8 and 41.2 km. On Sargassum GPS tracks the same line of work was not confirmed.
+
+- [Model 2 midpoint of current and wind physics: pre-registered drifter test](experiments/m2-midpoint-drifter-confirmation-2026-10-06/experiment.json)
+
+**Provenance**
+
+- Pre-registered midpoint test on drifters, final delivery report v9 section 6.; Source label: `artifacts/eval_loop/final_delivery_v9/report.md` (private historical source; provenance only); SHA-256: `f07759331c26755e65a26f5d40e9ef0873404583a455c1b9a07a79524b40247d`
+
+### 2026-10-06 — Model 2 R18 neural correction: clean re-evaluation finds no benefit beyond a constant shift
+
+**COMPLETED** · Model 2 R18 seed 11 learned correction versus physics and a constant-vector control on 19 held-out Sentinel-2 pairs, plus a footprint-aware pair benchmark.
+
+On 19 held-out pairs, centroid error was 43.5 km for wind-only physics, 47.9 km for current-coupled physics, 28.8 km for R18 seed 11 and 25.9 km for the mean of 20 seeds. Wind-only physics plus one constant 37.8 km eastward shift scored 23.6 km, so the network adds nothing beyond a constant shift. The earlier R18 selection is not supported as a learned correction. In a footprint-corrected benchmark (42 pairs scored by every arm, 72 h) no arm was distinguishable from persistence.
+
+- [Model 2 R18 neural correction: clean re-evaluation finds no benefit beyond a constant shift](experiments/m2-r18-clean-reevaluation-2026-10-06/experiment.json)
+
+**Provenance**
+
+- Clean R18 re-evaluation, footprint analysis and pair benchmark in the final delivery report v8, sections 1 to 3.; Source label: `artifacts/eval_loop/final_delivery_v8/report.md` (private historical source; provenance only); SHA-256: `ea9e8f46301fed4cb2a19b2e6062872b790bb47b248dc09a11fae81f34a1adfd`
+
+### 2026-10-06 — R18 learned correction no longer treated as validated
+
+**COMPLETED** · Model 2
+
+A clean re-evaluation found R18 no better than a constant shift, and showed pair offsets track image footprint. Earlier archive records describing R18 seed 11 as a selected or production correction should be read as superseded. The best-supported Model 2 configuration is the parameter-free midpoint of current-coupled and wind-only 2 percent physics, confirmed on drifters but not on Sargassum tracks. The owner repository documents still disagree on R18 status.
+
+- [Model 2 R18 neural correction: clean re-evaluation finds no benefit beyond a constant shift](experiments/m2-r18-clean-reevaluation-2026-10-06/experiment.json)
+
+**Provenance**
+
+- Final delivery report v8 sections 1 to 3 and report v10 status notes.; Source label: `artifacts/eval_loop/final_delivery_v8/report.md` (private historical source; provenance only); SHA-256: `ea9e8f46301fed4cb2a19b2e6062872b790bb47b248dc09a11fae81f34a1adfd`
+
+### 2026-10-11 — Model 3: no verified beach truth, so skill cannot be measured
+
+**COMPLETED** · Attempt to build a second Model 3 benchmark from data on disk for 17 accepted beach geometries in the St Kitts and Nevis study area.
+
+The benchmark yields 1,003 site-by-pass cases: 0 positive, 37 filtered-empty and 966 unknown. The only available truth is the same satellite pass the prediction uses, which is circular, and none of 14,086 citizen reports fall in the study area. Model 3 skill is therefore Unknown, not zero. Dated beach presence or absence observations paired with forecasts frozen beforehand are required.
+
+- [Model 3: no verified beach truth, so skill cannot be measured](experiments/m3-beach-truth-blocked-2026-10-11/experiment.json)
+
+**Provenance**
+
+- Section 4e of the final delivery report v10.; Source label: `artifacts/eval_loop/final_delivery_v10/report.md` (private historical source; provenance only); SHA-256: `73ed4f09fb2cf5e38d248d53d26277fee22241c737acc6b73987db4e47380a9d`
+
+### 2026-10-12 — Model 1: would dropping R47 cost anything? Registered ensemble alternatives
+
+**COMPLETED** · Registered non-inferiority test of R46 alone and R46+R49 against the production R46+R47 ensemble on the land-guarded test (173 scenes) and the SKN test (129 scenes).
+
+Neither registered candidate passed. R46 alone scored -0.012 IoU versus production on the land-guarded test (interval -0.018 to -0.006) and -0.026 on the SKN test. R46+R49 scored -0.018 on the land-guarded test (interval -0.029 to -0.006) and +0.064 on the SKN test (interval +0.013 to +0.129). Production R46+R47 remains selected. The control reproduced production at 0.6232 and 0.2146.
+
+- [Model 1: would dropping R47 cost anything? Registered ensemble alternatives](experiments/m1-ensemble-alternatives-2026-10-12/experiment.json)
+
+**Provenance**
+
+- Section 4o of the final delivery report v10 with pre-registered rule and control gate.; Source label: `artifacts/eval_loop/final_delivery_v10/report.md` (private historical source; provenance only); SHA-256: `73ed4f09fb2cf5e38d248d53d26277fee22241c737acc6b73987db4e47380a9d`
+
+### 2026-10-12 — Model 2 GOES SST-pattern motion versus drifters: not supported
+
+**COMPLETED** · Retrospective co-motion check of GOES sea-surface-temperature pattern shifts against archived drifter six-hour displacements, under a frozen protocol.
+
+Only 8 of 157 eligible primary (drogued, April to September) windows passed the acceptance filters (5.1%), covering 4 drifter clusters, too few for an interval. Vector RMSE was 0.3310 m/s versus 0.2925 m/s for a zero-vector diagnostic, with a median angular separation of 81.1 degrees. The result does not justify building a GOES-motion module. A secondary undrogued stratum (118 windows, 28 drifters) had RMSE 0.2309 versus 0.2503 m/s (clustered 95% interval 0.2008 to 0.2654) and does not rescue the primary result.
+
+- [Model 2 GOES SST-pattern motion versus drifters: not supported](experiments/m2-goes-sst-drifter-validation-2026-10-12/experiment.json)
+
+**Provenance**
+
+- Section 4q of the final delivery report v10, scored from a nested formatted run after source hash receipts verified.; Source label: `artifacts/eval_loop/final_delivery_v10/report.md` (private historical source; provenance only); SHA-256: `73ed4f09fb2cf5e38d248d53d26277fee22241c737acc6b73987db4e47380a9d`
+
+### 2026-10-14 — Model 1 training on hold; guarded validation blocked
+
+**COMPLETED** · Model 1
+
+Guarded validation masks (171 scenes, 5,000 patches) were built and fully verified, but evaluation stayed blocked because joined image, label and mask content, grid identity and guarded-label derivation are not yet qualified. No Model 1 training is active and no promotion is supported. Human adjudication of the review queue (300 cases) has recorded zero verdicts.
+
+
+**Provenance**
+
+- Handoff of 14 October 2026 and report v10 sections 4q to 4u.; Source label: `artifacts/eval_loop/final_delivery_v10/report.md` (private historical source; provenance only); SHA-256: `73ed4f09fb2cf5e38d248d53d26277fee22241c737acc6b73987db4e47380a9d`
+
+### 2026-10-16 — Model 2 coast-reach probabilities: calibrated on drifters
+
+**COMPLETED** · Probability that a drifting object crosses a stretch of line within a lead time, from a forecast track plus empirical error paths, tested across two historical periods.
+
+At 48 h the error-path ensemble scored Brier 0.00657 and 0.00663 across the two cross-period directions, versus 0.00687 and 0.00681 for a Gaussian spread, 0.00958 and 0.00960 for the single forecast track, and 0.01025 and 0.01022 for climatology (Brier skill versus climatology about 0.35 to 0.36). At 120 h: 0.0182 and 0.0184 versus Gaussian 0.0194 and 0.0192 (skill 0.24). Forecast probabilities matched observed frequencies across the range, for example forecasts of 0.55 came true 55% of the time at 48 h. The single track is overconfident and worse than climatology beyond about 72 h.
+
+- [Model 2 coast-reach probabilities: calibrated on drifters](experiments/m2-crossing-probabilities-2026-10-16/experiment.json)
+
+**Provenance**
+
+- Section 4u of the final delivery report v10.; Source label: `artifacts/eval_loop/final_delivery_v10/report.md` (private historical source; provenance only); SHA-256: `73ed4f09fb2cf5e38d248d53d26277fee22241c737acc6b73987db4e47380a9d`
+
 ## Undated records
 
 These records have no established date. Their placement here implies no chronological order relative to dated milestones.
