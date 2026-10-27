@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "m2-putman-windage-calibration-2026-09-27",
+  "status": "completed",
+  "date_note": "",
+  "citations": [],
+  "title": "Model 2 windage calibration on Putman GPS mat tracks",
+  "date": "2026-09-27",
+  "scope": "Wind-only and current-plus-wind drift endpoint errors for four natural Sargassum mat tracks, used to calibrate the windage coefficient.",
+  "summary": "On four natural mat GPS tracks (2018), a wind-only windage near 0.02 beat the frozen 0.005 coefficient and persistence. Leave-one-track-out median endpoint error at 24 h was 11.59 km (n=47) versus 15.67 km for the frozen coefficient and 17.54 km for persistence; at 48 h, 28.67 km (n=22) versus 35.53 km and 35.99 km; at 6 h, 4.01 km (n=203) versus 4.66 km and 4.91 km.",
+  "outcome": "positive",
+  "metrics": [
+    {
+      "name": "24 h LOTO wind-only median error (km)",
+      "value": 11.59,
+      "provenance": "Leave-one-track-out, windage chosen on the other three tracks; n=47 segments."
+    },
+    {
+      "name": "24 h frozen-windage median error (km)",
+      "value": 15.67,
+      "provenance": "Windage 0.005, pooled over all tracks; n=47."
+    },
+    {
+      "name": "24 h persistence median error (km)",
+      "value": 17.54,
+      "provenance": "Pooled; n=47."
+    },
+    {
+      "name": "48 h LOTO wind-only median error (km)",
+      "value": 28.67,
+      "provenance": "Leave-one-track-out; n=22 segments."
+    },
+    {
+      "name": "48 h frozen-windage median error (km)",
+      "value": 35.53,
+      "provenance": "Windage 0.005, pooled; n=22."
+    },
+    {
+      "name": "48 h persistence median error (km)",
+      "value": 35.99,
+      "provenance": "Pooled; n=22."
+    },
+    {
+      "name": "6 h LOTO wind-only median error (km)",
+      "value": 4.01,
+      "provenance": "Leave-one-track-out; n=203 segments."
+    },
+    {
+      "name": "6 h frozen-windage median error (km)",
+      "value": 4.66,
+      "provenance": "Windage 0.005, pooled; n=203."
+    }
+  ],
+  "limitations": [
+    "Only four tracks near one region and season; segments within a track are correlated, so the effective sample is far smaller than the segment counts.",
+    "Frozen and persistence rows are pooled, not leave-one-out.",
+    "Daily-mean reanalysis currents limit the current-plus-wind variants.",
+    "Endpoint distance on observed mat tracks is not map overlap and not coastal-arrival skill.",
+    "This is a calibration study. It is not the separately announced sub-kilometre St Kitts feasibility benchmark and does not complete it."
+  ],
+  "evidence": [
+    {
+      "summary": "Aggregate calibration table from the windage study summary.",
+      "source_path": "artifacts/m2_physics_cal/putman/summary.md",
+      "sha256": "75414fe7c851fff1db1811bd45eb1e860e746e4c49afd7ddef247d376de68db8",
+      "commit": "e76a017"
+    }
+  ]
+}

@@ -9,17 +9,42 @@
   "scope": "Model 1 comparison of R49 with the production R46+R47 mean-probability ensemble on the SKN evaluation cohort under the serving land mask.",
   "outcome": "positive",
   "metrics": [
-    {"name": "R49 serving-mask IoU", "value": 0.3903, "provenance": "129 paired SKN scenes evaluated under the serving land mask."},
-    {"name": "Production R46+R47 serving-mask IoU", "value": 0.2148, "provenance": "Same 129 paired SKN scenes and serving land mask."},
-    {"name": "Paired IoU difference, R49 minus production", "value": 0.1755, "provenance": "Paired-scene comparison on the same SKN evaluation cohort."},
-    {"name": "Paired IoU difference 95% interval lower bound", "value": 0.0928, "provenance": "Paired-scene bootstrap interval."},
-    {"name": "Paired IoU difference 95% interval upper bound", "value": 0.25, "provenance": "Paired-scene bootstrap interval."},
-    {"name": "Paired scenes", "value": 129, "provenance": "SKN serving-mask evaluation cohort."}
+    {
+      "name": "R49 serving-mask IoU",
+      "value": 0.3903,
+      "provenance": "129 paired SKN scenes evaluated under the serving land mask."
+    },
+    {
+      "name": "Production R46+R47 serving-mask IoU",
+      "value": 0.2148,
+      "provenance": "Same 129 paired SKN scenes and serving land mask."
+    },
+    {
+      "name": "Paired IoU difference, R49 minus production",
+      "value": 0.1755,
+      "provenance": "Paired-scene comparison on the same SKN evaluation cohort."
+    },
+    {
+      "name": "Paired IoU difference 95% interval lower bound",
+      "value": 0.0928,
+      "provenance": "Paired-scene bootstrap interval."
+    },
+    {
+      "name": "Paired IoU difference 95% interval upper bound",
+      "value": 0.25,
+      "provenance": "Paired-scene bootstrap interval."
+    },
+    {
+      "name": "Paired scenes",
+      "value": 129,
+      "provenance": "SKN serving-mask evaluation cohort."
+    }
   ],
   "limitations": [
     "The R49 validation split was used for model selection.",
     "The historical guarded-label IoU of 0.6440 comes from a different cohort and metric and was test-tuned. It is not comparable to this SKN result and is not an unbiased serving estimate.",
-    "This evaluation does not change the selected production model or its serving scope."
+    "This evaluation does not change the selected production model or its serving scope.",
+    "On the historical official land-guarded test, R49 scored 0.5527 versus 0.6232 for the production ensemble, so the SKN gain does not generalize to that cohort. See the m1-r49-official-landguard-test-2026-09-29 record."
   ],
   "evidence": [
     {

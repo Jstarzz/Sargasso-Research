@@ -2073,6 +2073,70 @@
       "category": "research-programme"
     },
     {
+      "id": "prospective-shadow-window",
+      "date": "2026-09-24",
+      "title": "Prospective daily shadow evaluation of frozen C - IN PROGRESS",
+      "status": "in_progress",
+      "scope": "Model 2",
+      "category": "milestone"
+    },
+    {
+      "id": "m2-putman-windage-calibration-2026-09-27",
+      "title": "Model 2 windage calibration on Putman GPS mat tracks",
+      "status": "completed",
+      "date": "2026-09-27",
+      "scope": "Wind-only and current-plus-wind drift endpoint errors for four natural Sargassum mat tracks, used to calibrate the windage coefficient.",
+      "summary": "On four natural mat GPS tracks (2018), a wind-only windage near 0.02 beat the frozen 0.005 coefficient and persistence. Leave-one-track-out median endpoint error at 24 h was 11.59 km (n=47) versus 15.67 km for the frozen coefficient and 17.54 km for persistence; at 48 h, 28.67 km (n=22) versus 35.53 km and 35.99 km; at 6 h, 4.01 km (n=203) versus 4.66 km and 4.91 km.",
+      "evidence": [
+        {
+          "summary": "Aggregate calibration table from the windage study summary.",
+          "source_path": "artifacts/m2_physics_cal/putman/summary.md",
+          "sha256": "75414fe7c851fff1db1811bd45eb1e860e746e4c49afd7ddef247d376de68db8",
+          "commit": "e76a017"
+        }
+      ],
+      "experiment_ids": [
+        "m2-putman-windage-calibration-2026-09-27"
+      ]
+    },
+    {
+      "id": "final-check-v1-failure",
+      "date": "2026-09-29",
+      "title": "Once-only June-September 2026 final check failed and its cohort was consumed",
+      "status": "completed",
+      "scope": "Models 2 and 3",
+      "category": "milestone",
+      "summary": "The signed once-only evaluation of the improved Model 2 and Model 3 candidates on the June-September 2026 cohort crashed after in-memory Model 2 scoring because of a stretch-climatology input bug. No score tables or verdicts were persisted, and the in-memory numbers are declared not reportable. The cohort is consumed and cannot be reused as untouched evidence. The later C3, C and P comparison on that cohort is a disclosed second look, not confirmation.",
+      "experiment_ids": [],
+      "evidence": [
+        {
+          "summary": "Failure incident record with run state, cohort custody and integrity hashes.",
+          "source_path": "artifacts/sprint_final_check/failure_incident_20260929.md",
+          "sha256": "aa3999204eb20f688c44f63877b838dd134eee39581c691fda216b418d8bb0e8",
+          "commit": "202c028"
+        }
+      ]
+    },
+    {
+      "id": "m1-r49-official-landguard-test-2026-09-29",
+      "title": "Model 1 R49 versus production ensemble on the official land-guarded test",
+      "status": "completed",
+      "date": "2026-09-29",
+      "scope": "Model 1 data-only R49 retrain compared with the R46+R47 mean-probability ensemble on the historical land-guarded test split.",
+      "summary": "On the official land-guarded test split with the serving land mask, R49 scored IoU 0.5527 versus 0.6232 for the production R46+R47 ensemble (ensemble ahead by 0.1003). Unmasked, R49 scored 0.5519 versus 0.5229. The ensemble result does not reproduce the historical 0.6440 headline (difference -0.0208, outside the documented run-to-run range of about 0.01).",
+      "evidence": [
+        {
+          "summary": "Aggregate land-guarded test table in the R49 evaluation summary.",
+          "source_path": "artifacts/m1_r49/r49_20260928T155935Z/summary_v2.md",
+          "sha256": "ccb5be338a91b30595ade8cee4256bf46df28256286a88444a789e728de0ca80",
+          "commit": "202c028"
+        }
+      ],
+      "experiment_ids": [
+        "m1-r49-official-landguard-test-2026-09-29"
+      ]
+    },
+    {
       "id": "m1-r49-skn-serving-eval-2026-09-29",
       "title": "R49 SKN serving-mask evaluation against production",
       "status": "completed",
@@ -2108,6 +2172,25 @@
       ],
       "experiment_ids": [
         "m2-c3-recovery-2026-09-29"
+      ]
+    },
+    {
+      "id": "m2-c3ot-sinkhorn-2026-09-29",
+      "title": "Model 2 C3-OT: windage 0.04 with Sinkhorn and soft-Dice loss",
+      "status": "completed",
+      "date": "2026-09-29",
+      "scope": "Model 2 residual-correction training variant compared with the C2w recipe on development folds.",
+      "summary": "Adding a Sinkhorn (km-distance) loss plus heavier soft-Dice (lambda=1) to the windage-0.04 recipe lost IoU to C2w by 0.063 on the 2023 fold and 0.019 on the 2022 fold, while improving median miss distance by 4.8 km and 1.8 km. The variant was shelved.",
+      "evidence": [
+        {
+          "summary": "Dated sprint-log entry recording the fold deltas and the shelving decision.",
+          "source_path": "docs/sprint_20260927.md",
+          "sha256": "5824614df21ced9c7d3059e9d42ae8f3f606417598137bab8b78961b18d2074f",
+          "commit": "14093d2"
+        }
+      ],
+      "experiment_ids": [
+        "m2-c3ot-sinkhorn-2026-09-29"
       ]
     },
     {

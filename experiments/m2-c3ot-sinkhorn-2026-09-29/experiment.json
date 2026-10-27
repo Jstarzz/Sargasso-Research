@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "m2-c3ot-sinkhorn-2026-09-29",
+  "status": "completed",
+  "date_note": "",
+  "citations": [],
+  "title": "Model 2 C3-OT: windage 0.04 with Sinkhorn and soft-Dice loss",
+  "date": "2026-09-29",
+  "scope": "Model 2 residual-correction training variant compared with the C2w recipe on development folds.",
+  "summary": "Adding a Sinkhorn (km-distance) loss plus heavier soft-Dice (lambda=1) to the windage-0.04 recipe lost IoU to C2w by 0.063 on the 2023 fold and 0.019 on the 2022 fold, while improving median miss distance by 4.8 km and 1.8 km. The variant was shelved.",
+  "outcome": "negative",
+  "metrics": [
+    {
+      "name": "IoU change versus C2w, 2023 fold",
+      "value": -0.063,
+      "provenance": "Development fold; lambda=1."
+    },
+    {
+      "name": "IoU change versus C2w, 2022 fold",
+      "value": -0.019,
+      "provenance": "Development fold; lambda=1."
+    },
+    {
+      "name": "Median miss change versus C2w, 2023 fold (km)",
+      "value": -4.8,
+      "provenance": "Negative is a smaller miss distance."
+    },
+    {
+      "name": "Median miss change versus C2w, 2022 fold (km)",
+      "value": -1.8,
+      "provenance": "Negative is a smaller miss distance."
+    }
+  ],
+  "limitations": [
+    "Development-fold evidence only; not a confirmation and not a live forecast result.",
+    "Miss-distance gains traded off against overlap loss; the overlap metric governed the decision.",
+    "Per-fold sample sizes and intervals are not retained in the public summary."
+  ],
+  "evidence": [
+    {
+      "summary": "Dated sprint-log entry recording the fold deltas and the shelving decision.",
+      "source_path": "docs/sprint_20260927.md",
+      "sha256": "5824614df21ced9c7d3059e9d42ae8f3f606417598137bab8b78961b18d2074f",
+      "commit": "14093d2"
+    }
+  ]
+}

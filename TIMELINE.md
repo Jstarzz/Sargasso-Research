@@ -1081,6 +1081,45 @@ Current handoff preserves frozen C and R46/R47 and R18 selections. No new traini
 
 **IN PROGRESS** · Currents-only retrospective hindcast using real 2018 GLORYS and frozen Putman rolling GPS cases for St Kitts feasibility. User confirms a background worker is running; no outcomes or unfinished metrics published. No model training is active.
 
+### 2026-09-24 — Prospective daily shadow evaluation of frozen C - IN PROGRESS
+
+**IN PROGRESS** · Model 2
+
+### 2026-09-27 — Model 2 windage calibration on Putman GPS mat tracks
+
+**COMPLETED** · Wind-only and current-plus-wind drift endpoint errors for four natural Sargassum mat tracks, used to calibrate the windage coefficient.
+
+On four natural mat GPS tracks (2018), a wind-only windage near 0.02 beat the frozen 0.005 coefficient and persistence. Leave-one-track-out median endpoint error at 24 h was 11.59 km (n=47) versus 15.67 km for the frozen coefficient and 17.54 km for persistence; at 48 h, 28.67 km (n=22) versus 35.53 km and 35.99 km; at 6 h, 4.01 km (n=203) versus 4.66 km and 4.91 km.
+
+- [Model 2 windage calibration on Putman GPS mat tracks](experiments/m2-putman-windage-calibration-2026-09-27/experiment.json)
+
+**Provenance**
+
+- Aggregate calibration table from the windage study summary.; Source label: `artifacts/m2_physics_cal/putman/summary.md` (private historical source; provenance only); SHA-256: `75414fe7c851fff1db1811bd45eb1e860e746e4c49afd7ddef247d376de68db8`; Source commit: `e76a017`
+
+### 2026-09-29 — Once-only June-September 2026 final check failed and its cohort was consumed
+
+**COMPLETED** · Models 2 and 3
+
+The signed once-only evaluation of the improved Model 2 and Model 3 candidates on the June-September 2026 cohort crashed after in-memory Model 2 scoring because of a stretch-climatology input bug. No score tables or verdicts were persisted, and the in-memory numbers are declared not reportable. The cohort is consumed and cannot be reused as untouched evidence. The later C3, C and P comparison on that cohort is a disclosed second look, not confirmation.
+
+
+**Provenance**
+
+- Failure incident record with run state, cohort custody and integrity hashes.; Source label: `artifacts/sprint_final_check/failure_incident_20260929.md` (private historical source; provenance only); SHA-256: `aa3999204eb20f688c44f63877b838dd134eee39581c691fda216b418d8bb0e8`; Source commit: `202c028`
+
+### 2026-09-29 — Model 1 R49 versus production ensemble on the official land-guarded test
+
+**COMPLETED** · Model 1 data-only R49 retrain compared with the R46+R47 mean-probability ensemble on the historical land-guarded test split.
+
+On the official land-guarded test split with the serving land mask, R49 scored IoU 0.5527 versus 0.6232 for the production R46+R47 ensemble (ensemble ahead by 0.1003). Unmasked, R49 scored 0.5519 versus 0.5229. The ensemble result does not reproduce the historical 0.6440 headline (difference -0.0208, outside the documented run-to-run range of about 0.01).
+
+- [Model 1 R49 versus production ensemble on the official land-guarded test](experiments/m1-r49-official-landguard-test-2026-09-29/experiment.json)
+
+**Provenance**
+
+- Aggregate land-guarded test table in the R49 evaluation summary.; Source label: `artifacts/m1_r49/r49_20260928T155935Z/summary_v2.md` (private historical source; provenance only); SHA-256: `ccb5be338a91b30595ade8cee4256bf46df28256286a88444a789e728de0ca80`; Source commit: `202c028`
+
 ### 2026-09-29 — R49 SKN serving-mask evaluation against production
 
 **COMPLETED** · Model 1 comparison of R49 with the production R46+R47 mean-probability ensemble on the SKN evaluation cohort under the serving land mask.
@@ -1104,6 +1143,18 @@ On 70 admitted pairs in a disclosed second look, mean IoU was 0.58914 for C3, 0.
 **Provenance**
 
 - Sanitized source index with aggregate C3, C, and P metrics and intervals.; Source label: `artifacts/sprint_final_check/model_results_20260929.md` (private historical source; provenance only); SHA-256: `ace3af28e824aea618a1652273cb37561d2b713317c77847890e34b9c267f515`; Source commit: `202c028`
+
+### 2026-09-29 — Model 2 C3-OT: windage 0.04 with Sinkhorn and soft-Dice loss
+
+**COMPLETED** · Model 2 residual-correction training variant compared with the C2w recipe on development folds.
+
+Adding a Sinkhorn (km-distance) loss plus heavier soft-Dice (lambda=1) to the windage-0.04 recipe lost IoU to C2w by 0.063 on the 2023 fold and 0.019 on the 2022 fold, while improving median miss distance by 4.8 km and 1.8 km. The variant was shelved.
+
+- [Model 2 C3-OT: windage 0.04 with Sinkhorn and soft-Dice loss](experiments/m2-c3ot-sinkhorn-2026-09-29/experiment.json)
+
+**Provenance**
+
+- Dated sprint-log entry recording the fold deltas and the shelving decision.; Source label: `docs/sprint_20260927.md` (private historical source; provenance only); SHA-256: `5824614df21ced9c7d3059e9d42ae8f3f606417598137bab8b78961b18d2074f`; Source commit: `14093d2`
 
 ### 2026-09-29 — Model 3 island and coastal stretch recovery results
 
