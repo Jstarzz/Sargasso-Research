@@ -1,4 +1,4 @@
-# Model 2 R18 neural correction: clean re-evaluation finds no benefit beyond a constant shift
+# Model 2 R18 neural correction: clean re-evaluation matches a constant-shift control
 
 ## Question
 
@@ -14,7 +14,7 @@ R18 matched a constant shift; no benchmark arm separated from persistence.
 
 ## Interpretation
 
-The R18 gain was mostly a footprint-driven east offset, not learned transport. Same-footprint observations are needed to train a learned correction.
+One reading is that the R18 gain is a footprint-driven east offset, not learned transport. Same-footprint observations would settle it.
 
 ## Limitations
 
@@ -23,4 +23,4 @@ The R18 gain was mostly a footprint-driven east offset, not learned transport. S
 - The planned common-footprint rescoring failed (timeout, then a crash) and its pre-registered criterion was never evaluated.
 - The pair benchmark is underpowered: only about 20% of predicted mass lands in the observed strip.
 - The only consistent signal is that east bias falls as windage rises toward 2 to 3 percent.
-- This supersedes the archive records that describe R18 as a validated selection.
+- Small sample (19 pairs) on exposed data; the project documents do not yet agree on R18 status, so earlier R18 records are kept as published.

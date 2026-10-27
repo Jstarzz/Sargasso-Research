@@ -4,10 +4,10 @@
   "status": "completed",
   "date_note": "",
   "citations": [],
-  "title": "Model 2 R18 neural correction: clean re-evaluation finds no benefit beyond a constant shift",
+  "title": "Model 2 R18 neural correction: clean re-evaluation matches a constant-shift control",
   "date": "2026-10-06",
   "scope": "Model 2 R18 seed 11 learned correction versus physics and a constant-vector control on 19 held-out Sentinel-2 pairs, plus a footprint-aware pair benchmark.",
-  "summary": "On 19 held-out pairs, centroid error was 43.5 km for wind-only physics, 47.9 km for current-coupled physics, 28.8 km for R18 seed 11 and 25.9 km for the mean of 20 seeds. Wind-only physics plus one constant 37.8 km eastward shift scored 23.6 km, so the network adds nothing beyond a constant shift. The earlier R18 selection is not supported as a learned correction. In a footprint-corrected benchmark (42 pairs scored by every arm, 72 h) no arm was distinguishable from persistence.",
+  "summary": "On 19 held-out pairs, centroid error was 43.5 km for wind-only physics, 47.9 km for current-coupled physics, 28.8 km for R18 seed 11 and 25.9 km for the mean of 20 seeds. Wind-only physics plus one constant 37.8 km eastward shift scored 23.6 km, so the network adds nothing beyond a constant shift. This challenges the earlier R18 result, but the sample is small and the project documents do not yet agree on R18 status. In a footprint-corrected benchmark (42 pairs scored by every arm, 72 h) no arm was distinguishable from persistence.",
   "outcome": "negative",
   "metrics": [
     {
@@ -47,7 +47,7 @@
     "The planned common-footprint rescoring failed (timeout, then a crash) and its pre-registered criterion was never evaluated.",
     "The pair benchmark is underpowered: only about 20% of predicted mass lands in the observed strip.",
     "The only consistent signal is that east bias falls as windage rises toward 2 to 3 percent.",
-    "This supersedes the archive records that describe R18 as a validated selection."
+    "Small sample (19 pairs) on exposed data; the project documents do not yet agree on R18 status, so earlier R18 records are kept as published."
   ],
   "evidence": [
     {

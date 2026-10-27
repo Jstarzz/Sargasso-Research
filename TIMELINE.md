@@ -1224,25 +1224,25 @@ Registered before any drifter was scored, the midpoint beat both comparators at 
 
 - Pre-registered midpoint test on drifters, final delivery report v9 section 6.; Source label: `artifacts/eval_loop/final_delivery_v9/report.md` (private historical source; provenance only); SHA-256: `f07759331c26755e65a26f5d40e9ef0873404583a455c1b9a07a79524b40247d`
 
-### 2026-10-06 — Model 2 R18 neural correction: clean re-evaluation finds no benefit beyond a constant shift
+### 2026-10-06 — Model 2 R18 neural correction: clean re-evaluation matches a constant-shift control
 
 **COMPLETED** · Model 2 R18 seed 11 learned correction versus physics and a constant-vector control on 19 held-out Sentinel-2 pairs, plus a footprint-aware pair benchmark.
 
-On 19 held-out pairs, centroid error was 43.5 km for wind-only physics, 47.9 km for current-coupled physics, 28.8 km for R18 seed 11 and 25.9 km for the mean of 20 seeds. Wind-only physics plus one constant 37.8 km eastward shift scored 23.6 km, so the network adds nothing beyond a constant shift. The earlier R18 selection is not supported as a learned correction. In a footprint-corrected benchmark (42 pairs scored by every arm, 72 h) no arm was distinguishable from persistence.
+On 19 held-out pairs, centroid error was 43.5 km for wind-only physics, 47.9 km for current-coupled physics, 28.8 km for R18 seed 11 and 25.9 km for the mean of 20 seeds. Wind-only physics plus one constant 37.8 km eastward shift scored 23.6 km, so the network adds nothing beyond a constant shift. This challenges the earlier R18 result, but the sample is small and the project documents do not yet agree on R18 status. In a footprint-corrected benchmark (42 pairs scored by every arm, 72 h) no arm was distinguishable from persistence.
 
-- [Model 2 R18 neural correction: clean re-evaluation finds no benefit beyond a constant shift](experiments/m2-r18-clean-reevaluation-2026-10-06/experiment.json)
+- [Model 2 R18 neural correction: clean re-evaluation matches a constant-shift control](experiments/m2-r18-clean-reevaluation-2026-10-06/experiment.json)
 
 **Provenance**
 
 - Clean R18 re-evaluation, footprint analysis and pair benchmark in the final delivery report v8, sections 1 to 3.; Source label: `artifacts/eval_loop/final_delivery_v8/report.md` (private historical source; provenance only); SHA-256: `ea9e8f46301fed4cb2a19b2e6062872b790bb47b248dc09a11fae81f34a1adfd`
 
-### 2026-10-06 — R18 learned correction no longer treated as validated
+### 2026-10-06 — R18 learned correction challenged by a clean re-evaluation
 
 **COMPLETED** · Model 2
 
-A clean re-evaluation found R18 no better than a constant shift, and showed pair offsets track image footprint. Earlier archive records describing R18 seed 11 as a selected correction should be read as superseded. The best-supported Model 2 configuration is the parameter-free midpoint of current-coupled and wind-only 2 percent physics, confirmed on drifters but not on Sargassum tracks. The owner repository documents still disagree on R18 status.
+A clean re-evaluation on 19 held-out pairs found R18 no better than adding a constant shift to wind-only physics, and showed pair offsets track image footprint. This challenges earlier R18 results but is a small, exposed sample and the project documents do not yet agree on R18 status, so earlier R18 records are kept as published and should be read with this caveat. The best-supported Model 2 configuration in the same work is the parameter-free midpoint of current-coupled and wind-only 2 percent physics, confirmed on drifters but not on Sargassum tracks.
 
-- [Model 2 R18 neural correction: clean re-evaluation finds no benefit beyond a constant shift](experiments/m2-r18-clean-reevaluation-2026-10-06/experiment.json)
+- [Model 2 R18 neural correction: clean re-evaluation matches a constant-shift control](experiments/m2-r18-clean-reevaluation-2026-10-06/experiment.json)
 
 **Provenance**
 
