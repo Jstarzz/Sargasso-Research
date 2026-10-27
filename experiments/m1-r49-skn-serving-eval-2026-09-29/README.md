@@ -19,4 +19,4 @@ R49 scored higher than the production ensemble on this evaluation cohort. The co
 ## Limitations
 
 The R49 validation split was used for model selection. The historical guarded-label IoU of 0.6440 is from a different cohort and metric, was test-tuned, and is not comparable to this SKN result or an unbiased serving estimate.
-- On the historical official land-guarded test, R49 scored 0.5527 versus 0.6232 for the production ensemble, so the SKN gain does not generalize to that cohort. See the experiment record m1-r49-official-landguard-test-2026-09-29.
+- On the historical official land-guarded test, R49 scored 0.5527 versus 0.6232 for the selected ensemble, so the SKN gain does not generalize to that cohort. See the experiment record m1-r49-official-landguard-test-2026-09-29.

@@ -13,7 +13,7 @@ Four frozen-protocol retrospective hindcast phases ran on 19 to 20 September 202
 ## Evidence boundaries since the last release
 
 - The once-only June-September 2026 final check failed on 29 September and its cohort was consumed. The later C3 versus C and P comparison on that cohort is a disclosed second look and did not pass against C. See the [timeline entry](../TIMELINE.md).
-- R49 beat the production Model 1 ensemble on the SKN cohort but lost on the historical official test. See both R49 records in the [experiment index](../EXPERIMENTS.md).
+- R49 beat the selected Model 1 ensemble on the SKN cohort but lost on the historical official test. See both R49 records in the [experiment index](../EXPERIMENTS.md).
 - A clean re-evaluation on 6 October found the R18 learned correction no better than a constant shift; earlier records that treat it as validated are superseded. See the [R18 record](../experiments/m2-r18-clean-reevaluation-2026-10-06/README.md).
 - Model 1 training is on hold and guarded validation remains blocked as of 14 October. Model 3 skill is unmeasurable without verified beach observations.
 - No model has been promoted and no serving scope changed.

@@ -1156,9 +1156,9 @@ The signed once-only evaluation of the improved Model 2 and Model 3 candidates o
 
 **COMPLETED** · Model 1 data-only R49 retrain compared with the R46+R47 mean-probability ensemble on the historical land-guarded test split.
 
-On the official land-guarded test split with the serving land mask, R49 scored IoU 0.5527 versus 0.6232 for the production R46+R47 ensemble (ensemble ahead by 0.1003). Unmasked, R49 scored 0.5519 versus 0.5229. The ensemble result does not reproduce the historical 0.6440 headline (difference -0.0208, outside the documented run-to-run range of about 0.01).
+On the official land-guarded test split with the serving land mask, R49 scored IoU 0.5527 versus 0.6232 for the selected R46+R47 ensemble (ensemble ahead by 0.1003). Unmasked, R49 scored 0.5519 versus 0.5229. The ensemble result does not reproduce the historical 0.6440 headline (difference -0.0208, outside the documented run-to-run range of about 0.01).
 
-- [Model 1 R49 versus production ensemble on the official land-guarded test](experiments/m1-r49-official-landguard-test-2026-09-29/experiment.json)
+- [Model 1 R49 versus selected ensemble on the official land-guarded test](experiments/m1-r49-official-landguard-test-2026-09-29/experiment.json)
 
 **Provenance**
 
@@ -1240,7 +1240,7 @@ On 19 held-out pairs, centroid error was 43.5 km for wind-only physics, 47.9 km 
 
 **COMPLETED** · Model 2
 
-A clean re-evaluation found R18 no better than a constant shift, and showed pair offsets track image footprint. Earlier archive records describing R18 seed 11 as a selected or production correction should be read as superseded. The best-supported Model 2 configuration is the parameter-free midpoint of current-coupled and wind-only 2 percent physics, confirmed on drifters but not on Sargassum tracks. The owner repository documents still disagree on R18 status.
+A clean re-evaluation found R18 no better than a constant shift, and showed pair offsets track image footprint. Earlier archive records describing R18 seed 11 as a selected correction should be read as superseded. The best-supported Model 2 configuration is the parameter-free midpoint of current-coupled and wind-only 2 percent physics, confirmed on drifters but not on Sargassum tracks. The owner repository documents still disagree on R18 status.
 
 - [Model 2 R18 neural correction: clean re-evaluation finds no benefit beyond a constant shift](experiments/m2-r18-clean-reevaluation-2026-10-06/experiment.json)
 
@@ -1262,9 +1262,9 @@ The benchmark yields 1,003 site-by-pass cases: 0 positive, 37 filtered-empty and
 
 ### 2026-10-12 — Model 1: would dropping R47 cost anything? Registered ensemble alternatives
 
-**COMPLETED** · Registered non-inferiority test of R46 alone and R46+R49 against the production R46+R47 ensemble on the land-guarded test (173 scenes) and the SKN test (129 scenes).
+**COMPLETED** · Registered non-inferiority test of R46 alone and R46+R49 against the selected R46+R47 ensemble on the land-guarded test (173 scenes) and the SKN test (129 scenes).
 
-Neither registered candidate passed. R46 alone scored -0.012 IoU versus production on the land-guarded test (interval -0.018 to -0.006) and -0.026 on the SKN test. R46+R49 scored -0.018 on the land-guarded test (interval -0.029 to -0.006) and +0.064 on the SKN test (interval +0.013 to +0.129). Production R46+R47 remains selected. The control reproduced production at 0.6232 and 0.2146.
+Neither registered candidate passed. R46 alone scored -0.012 IoU versus the selected ensemble on the land-guarded test (interval -0.018 to -0.006) and -0.026 on the SKN test. R46+R49 scored -0.018 on the land-guarded test (interval -0.029 to -0.006) and +0.064 on the SKN test (interval +0.013 to +0.129). Selected R46+R47 remains selected. The control reproduced production at 0.6232 and 0.2146.
 
 - [Model 1: would dropping R47 cost anything? Registered ensemble alternatives](experiments/m1-ensemble-alternatives-2026-10-12/experiment.json)
 

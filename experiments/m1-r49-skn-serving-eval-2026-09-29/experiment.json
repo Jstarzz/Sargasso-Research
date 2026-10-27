@@ -44,7 +44,7 @@
     "The R49 validation split was used for model selection.",
     "The historical guarded-label IoU of 0.6440 comes from a different cohort and metric and was test-tuned. It is not comparable to this SKN result and is not an unbiased serving estimate.",
     "This evaluation does not change the selected production model or its serving scope.",
-    "On the historical official land-guarded test, R49 scored 0.5527 versus 0.6232 for the production ensemble, so the SKN gain does not generalize to that cohort. See the m1-r49-official-landguard-test-2026-09-29 record."
+    "On the historical official land-guarded test, R49 scored 0.5527 versus 0.6232 for the selected ensemble, so the SKN gain does not generalize to that cohort. See the m1-r49-official-landguard-test-2026-09-29 record."
   ],
   "evidence": [
     {

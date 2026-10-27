@@ -6,32 +6,32 @@
   "citations": [],
   "title": "Model 1: would dropping R47 cost anything? Registered ensemble alternatives",
   "date": "2026-10-12",
-  "scope": "Registered non-inferiority test of R46 alone and R46+R49 against the production R46+R47 ensemble on the land-guarded test (173 scenes) and the SKN test (129 scenes).",
-  "summary": "Neither registered candidate passed. R46 alone scored -0.012 IoU versus production on the land-guarded test (interval -0.018 to -0.006) and -0.026 on the SKN test. R46+R49 scored -0.018 on the land-guarded test (interval -0.029 to -0.006) and +0.064 on the SKN test (interval +0.013 to +0.129). Production R46+R47 remains selected. The control reproduced production at 0.6232 and 0.2146.",
+  "scope": "Registered non-inferiority test of R46 alone and R46+R49 against the selected R46+R47 ensemble on the land-guarded test (173 scenes) and the SKN test (129 scenes).",
+  "summary": "Neither registered candidate passed. R46 alone scored -0.012 IoU versus the selected ensemble on the land-guarded test (interval -0.018 to -0.006) and -0.026 on the SKN test. R46+R49 scored -0.018 on the land-guarded test (interval -0.029 to -0.006) and +0.064 on the SKN test (interval +0.013 to +0.129). Selected R46+R47 remains selected. The control reproduced production at 0.6232 and 0.2146.",
   "outcome": "negative",
   "metrics": [
     {
-      "name": "Production R46+R47 IoU, land-guarded test",
+      "name": "Selected R46+R47 IoU, land-guarded test",
       "value": 0.6232,
       "provenance": "173 scenes, four-pass TTA, threshold 0.60, land mask; control reproduced to 4 decimals."
     },
     {
-      "name": "Production R46+R47 IoU, SKN test",
+      "name": "Selected R46+R47 IoU, SKN test",
       "value": 0.2146,
       "provenance": "129 scenes, same protocol."
     },
     {
-      "name": "R46 alone minus production, land-guarded",
+      "name": "R46 alone minus selected ensemble, land-guarded",
       "value": -0.012,
       "provenance": "Paired scene bootstrap 95% interval -0.018 to -0.006."
     },
     {
-      "name": "R46+R49 minus production, land-guarded",
+      "name": "R46+R49 minus selected ensemble, land-guarded",
       "value": -0.018,
       "provenance": "Interval -0.029 to -0.006."
     },
     {
-      "name": "R46+R49 minus production, SKN",
+      "name": "R46+R49 minus selected ensemble, SKN",
       "value": 0.064,
       "provenance": "Interval +0.013 to +0.129."
     }
@@ -39,7 +39,7 @@
   "limitations": [
     "The source report is an untracked working-tree file; it is identified by SHA-256 only and has no source commit.",
     "Both test sets use automatic labels; the land-guarded test was reused for earlier selection.",
-    "The re-evaluated production control (0.6232) does not reproduce the historical 0.6440 headline.",
+    "The re-evaluated selected-ensemble control (0.6232) does not reproduce the historical 0.6440 headline.",
     "On human labels R47 is the weakest member, which the home automatic labels do not show; independent human adjudication of home scenes is needed.",
     "R49 alone (0.5528 and 0.3903) and the three-checkpoint mean are descriptive, not promotion results."
   ],

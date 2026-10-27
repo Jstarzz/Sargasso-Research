@@ -4,10 +4,10 @@
   "status": "completed",
   "date_note": "",
   "citations": [],
-  "title": "Model 1 R49 versus production ensemble on the official land-guarded test",
+  "title": "Model 1 R49 versus selected ensemble on the official land-guarded test",
   "date": "2026-09-29",
   "scope": "Model 1 data-only R49 retrain compared with the R46+R47 mean-probability ensemble on the historical land-guarded test split.",
-  "summary": "On the official land-guarded test split with the serving land mask, R49 scored IoU 0.5527 versus 0.6232 for the production R46+R47 ensemble (ensemble ahead by 0.1003). Unmasked, R49 scored 0.5519 versus 0.5229. The ensemble result does not reproduce the historical 0.6440 headline (difference -0.0208, outside the documented run-to-run range of about 0.01).",
+  "summary": "On the official land-guarded test split with the serving land mask, R49 scored IoU 0.5527 versus 0.6232 for the selected R46+R47 ensemble (ensemble ahead by 0.1003). Unmasked, R49 scored 0.5519 versus 0.5229. The ensemble result does not reproduce the historical 0.6440 headline (difference -0.0208, outside the documented run-to-run range of about 0.01).",
   "outcome": "negative",
   "metrics": [
     {
@@ -40,7 +40,7 @@
     "The official test split was reused for earlier selection and threshold tuning; it is not an unbiased serving estimate.",
     "Read together with the SKN serving evaluation, where R49 was ahead on a different cohort; neither cohort alone supports a promotion decision.",
     "The gap between the re-evaluated ensemble (0.6232) and the historical 0.6440 is not reconciled in the retained records.",
-    "R49 was not promoted; the selected production models and serving scope are unchanged.",
+    "R49 was not promoted; the selected selected models and serving scope are unchanged.",
     "This is the September 2026 data-only R49; it is distinct from the June 2026 R49 run of the same name."
   ],
   "evidence": [

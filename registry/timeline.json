@@ -2191,7 +2191,7 @@
       "status": "completed",
       "date": "2026-09-29",
       "scope": "Model 1 data-only R49 retrain compared with the R46+R47 mean-probability ensemble on the historical land-guarded test split.",
-      "summary": "On the official land-guarded test split with the serving land mask, R49 scored IoU 0.5527 versus 0.6232 for the production R46+R47 ensemble (ensemble ahead by 0.1003). Unmasked, R49 scored 0.5519 versus 0.5229. The ensemble result does not reproduce the historical 0.6440 headline (difference -0.0208, outside the documented run-to-run range of about 0.01).",
+      "summary": "On the official land-guarded test split with the serving land mask, R49 scored IoU 0.5527 versus 0.6232 for the selected R46+R47 ensemble (ensemble ahead by 0.1003). Unmasked, R49 scored 0.5519 versus 0.5229. The ensemble result does not reproduce the historical 0.6440 headline (difference -0.0208, outside the documented run-to-run range of about 0.01).",
       "evidence": [
         {
           "summary": "Aggregate land-guarded test table in the R49 evaluation summary.",
@@ -2325,7 +2325,7 @@
       "status": "completed",
       "scope": "Model 2",
       "category": "milestone",
-      "summary": "A clean re-evaluation found R18 no better than a constant shift, and showed pair offsets track image footprint. Earlier archive records describing R18 seed 11 as a selected or production correction should be read as superseded. The best-supported Model 2 configuration is the parameter-free midpoint of current-coupled and wind-only 2 percent physics, confirmed on drifters but not on Sargassum tracks. The owner repository documents still disagree on R18 status.",
+      "summary": "A clean re-evaluation found R18 no better than a constant shift, and showed pair offsets track image footprint. Earlier archive records describing R18 seed 11 as a selected correction should be read as superseded. The best-supported Model 2 configuration is the parameter-free midpoint of current-coupled and wind-only 2 percent physics, confirmed on drifters but not on Sargassum tracks. The owner repository documents still disagree on R18 status.",
       "experiment_ids": [
         "m2-r18-clean-reevaluation-2026-10-06"
       ],
@@ -2361,8 +2361,8 @@
       "title": "Model 1: would dropping R47 cost anything? Registered ensemble alternatives",
       "status": "completed",
       "date": "2026-10-12",
-      "scope": "Registered non-inferiority test of R46 alone and R46+R49 against the production R46+R47 ensemble on the land-guarded test (173 scenes) and the SKN test (129 scenes).",
-      "summary": "Neither registered candidate passed. R46 alone scored -0.012 IoU versus production on the land-guarded test (interval -0.018 to -0.006) and -0.026 on the SKN test. R46+R49 scored -0.018 on the land-guarded test (interval -0.029 to -0.006) and +0.064 on the SKN test (interval +0.013 to +0.129). Production R46+R47 remains selected. The control reproduced production at 0.6232 and 0.2146.",
+      "scope": "Registered non-inferiority test of R46 alone and R46+R49 against the selected R46+R47 ensemble on the land-guarded test (173 scenes) and the SKN test (129 scenes).",
+      "summary": "Neither registered candidate passed. R46 alone scored -0.012 IoU versus the selected ensemble on the land-guarded test (interval -0.018 to -0.006) and -0.026 on the SKN test. R46+R49 scored -0.018 on the land-guarded test (interval -0.029 to -0.006) and +0.064 on the SKN test (interval +0.013 to +0.129). Selected R46+R47 remains selected. The control reproduced production at 0.6232 and 0.2146.",
       "evidence": [
         {
           "summary": "Section 4o of the final delivery report v10 with pre-registered rule and control gate.",
