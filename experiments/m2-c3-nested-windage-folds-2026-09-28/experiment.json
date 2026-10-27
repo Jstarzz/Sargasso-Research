@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "m2-c3-nested-windage-folds-2026-09-28",
+  "status": "completed",
+  "date_note": "",
+  "citations": [],
+  "title": "Model 2 C3: higher windage on leave-one-year-out development folds",
+  "date": "2026-09-28",
+  "scope": "Nested (honest) leave-one-year-out development folds comparing a retrained recipe with windage 0.04 against the earlier windage 0.005 recipe and against persistence.",
+  "summary": "On the 2021 and 2023 folds the higher-windage recipe improved IoU by +0.030 and +0.013 over the windage 0.005 recipe and by +0.091 and +0.093 over persistence. These are development folds. In the later disclosed second look on June to September 2026 (70 pairs), the C3 versus C difference was +0.006 with an interval spanning zero.",
+  "outcome": "mixed",
+  "metrics": [
+    {
+      "name": "IoU gain over windage 0.005 recipe, 2021 fold",
+      "value": 0.03,
+      "provenance": "Nested leave-one-year-out development fold."
+    },
+    {
+      "name": "IoU gain over windage 0.005 recipe, 2023 fold",
+      "value": 0.013,
+      "provenance": "Nested leave-one-year-out development fold."
+    },
+    {
+      "name": "IoU gain over persistence, 2021 fold",
+      "value": 0.091,
+      "provenance": "Same fold."
+    },
+    {
+      "name": "IoU gain over persistence, 2023 fold",
+      "value": 0.093,
+      "provenance": "Same fold."
+    }
+  ],
+  "limitations": [
+    "Development folds only; not a confirmation and not a live forecast result.",
+    "The later second look found no significant gain of C3 over C (+0.006, interval spanning zero) on an exposed cohort.",
+    "In the separate sub-kilometre study the 3% windage coefficient did not hold up forward in time.",
+    "Per-fold sample sizes and intervals are not retained in the public summary."
+  ],
+  "evidence": [
+    {
+      "summary": "Dated sprint-log entry recording the nested fold gains.",
+      "source_path": "docs/sprint_20260927.md",
+      "sha256": "5824614df21ced9c7d3059e9d42ae8f3f606417598137bab8b78961b18d2074f",
+      "commit": "14093d2"
+    }
+  ]
+}

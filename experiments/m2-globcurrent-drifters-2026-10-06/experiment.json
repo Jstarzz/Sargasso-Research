@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": "m2-globcurrent-drifters-2026-10-06",
+  "status": "completed",
+  "date_note": "",
+  "citations": [],
+  "title": "Model 2 surface current product comparison on Caribbean drifters",
+  "date": "2026-10-06",
+  "scope": "Replacing the model surface current with an observation-based current product in a drift recipe, scored on 48 independent undrogued drifters in the eastern Caribbean (2,423 cases, June 2022 to August 2024); fitted arms scored on held-out drifters by 5-fold split.",
+  "summary": "The observation-based current product cut trajectory miss by roughly 30 to 40% at 24, 48 and 72 h. At 48 h the median miss was 20.2 km for the product alone against 29.9 km for the model current plus 2% wind, and the mean difference was -9.7 km (interval -11.6 to -7.4). A forecast-capable form (slow part frozen before issue, wind-driven part rebuilt) kept most of the gain (48 h mean -8.4 km, interval -10.4 to -6.0, with analysis wind standing in for forecast wind). On the four Puerto Rico GPS mats the same recipe tied the existing recipe and was worse in the tail.",
+  "outcome": "mixed",
+  "metrics": [
+    {
+      "name": "Product alone median miss 48 h (km)",
+      "value": 20.2,
+      "provenance": "2,423 cases, 48 drifters."
+    },
+    {
+      "name": "Model current plus 2% wind median miss 48 h (km)",
+      "value": 29.9,
+      "provenance": "Same cases; baseline."
+    },
+    {
+      "name": "Product alone minus baseline, 48 h mean (km)",
+      "value": -9.7,
+      "provenance": "Interval -11.6 to -7.4."
+    },
+    {
+      "name": "Forecast-mode product minus baseline, 48 h mean (km)",
+      "value": -8.4,
+      "provenance": "Interval -10.4 to -6.0; analysis wind stands in for forecast wind."
+    },
+    {
+      "name": "Velocity correlation with drifters, product",
+      "value": 0.71,
+      "provenance": "7,951 six-hour samples; model current 0.51."
+    }
+  ],
+  "limitations": [
+    "The source report is an untracked working-tree file; it is identified by SHA-256 only and has no source commit.",
+    "Drifters are not Sargassum; on the Puerto Rico GPS mats the recipe tied (medians 12.07/22.52 vs 11.73/22.38 km at 24/48 h) and had a worse 90th percentile.",
+    "Forecast mode uses analysis wind in place of forecast wind, which is optimistic.",
+    "Fitted arms used a 5-fold split by drifter, but the product comparison is exposed development evidence.",
+    "Adding 2% wind to a surface model current made drifters worse, consistent with double counting wind-driven flow; the finding that the model current is overweighted reproduces the half-weight result from GPS tracks."
+  ],
+  "evidence": [
+    {
+      "summary": "Headline and sections 1 to 3 of the final delivery report v9.",
+      "source_path": "artifacts/eval_loop/final_delivery_v9/report.md",
+      "sha256": "f07759331c26755e65a26f5d40e9ef0873404583a455c1b9a07a79524b40247d",
+      "commit": null
+    }
+  ]
+}

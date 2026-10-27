@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "m2-track-history-drifters-2026-10-08",
+  "status": "completed",
+  "date_note": "",
+  "citations": [],
+  "title": "Model 2 track-history correction on Caribbean drifters",
+  "date": "2026-10-08",
+  "scope": "Correction that hindcasts an object over its last 24 hours, measures the error, and carries a fading fraction of it forward. Needs a tracked object. Tested on undrogued surface drifters; settings chosen on one period and scored on the other.",
+  "summary": "On 1,786 cases (2022-24) and 1,985 cases (2018-22), the correction cut the 48 h miss by 19.1% and 22.4% for the current-only recipe and by 21.8% and 27.4% for the wind-added recipe (intervals exclude zero), and the 120 h miss by 9% to 18%. Both directions chose the same setting: 24 h of history, 0.75 of the measured error, 4-day fade. When the history window was ended 12 h before issue to remove a possible interpolation leak, the 48 h gain fell to 11.6% to 14.8%, so 12 to 15% is a conservative floor.",
+  "outcome": "positive",
+  "metrics": [
+    {
+      "name": "48 h miss change, 2022-24, current-only recipe",
+      "value": -19.1,
+      "provenance": "Percent; 1,786 cases; interval -5.36 to -3.75 km (mean change -4.52 km)."
+    },
+    {
+      "name": "48 h miss change, 2018-22, current-only recipe",
+      "value": -22.4,
+      "provenance": "Percent; 1,985 cases; interval -6.07 to -4.61 km."
+    },
+    {
+      "name": "48 h miss change, 2022-24, wind-added recipe",
+      "value": -21.8,
+      "provenance": "Percent; interval -6.52 to -4.48 km."
+    },
+    {
+      "name": "48 h miss change, 2018-22, wind-added recipe",
+      "value": -27.4,
+      "provenance": "Percent; interval -8.35 to -6.00 km."
+    },
+    {
+      "name": "48 h change with history ended 12 h before issue, 2018-22",
+      "value": -14.8,
+      "provenance": "Percent; leak check; 2022-24 value -11.6."
+    },
+    {
+      "name": "48 h change with 5 km fix noise, tuned",
+      "value": -8.4,
+      "provenance": "Percent; 48 h history at half strength; second period -10.9."
+    }
+  ],
+  "limitations": [
+    "The source report is an untracked working-tree file; it is identified by SHA-256 only and has no source commit.",
+    "Drifter positions are an interpolated six-hourly product, so the position at issue time may be partly built from later fixes; the lagged-window check removes most of this but cannot separate leak from information decay.",
+    "Drifters are undrogued surface drifters, not Sargassum, and the arms use analysis fields in place of forecasts.",
+    "Gains shrink with imprecise fixes: about 14 to 19% at 2 km noise and 8 to 11% at 5 km with retuned settings.",
+    "Borrowing the correction of nearby tracked objects for an untracked one is null (1 to 5% worse).",
+    "Tracked-object correction on Sargassum-like suites did not confirm; see the separate record."
+  ],
+  "evidence": [
+    {
+      "summary": "Section 4 and 4b of the final delivery report v10.",
+      "source_path": "artifacts/eval_loop/final_delivery_v10/report.md",
+      "sha256": "73ed4f09fb2cf5e38d248d53d26277fee22241c737acc6b73987db4e47380a9d",
+      "commit": null
+    }
+  ]
+}

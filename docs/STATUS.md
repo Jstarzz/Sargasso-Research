@@ -15,6 +15,7 @@ Four frozen-protocol retrospective hindcast phases ran on 19 to 20 September 202
 - The once-only June-September 2026 final check failed on 29 September and its cohort was consumed. The later C3 versus C and P comparison on that cohort is a disclosed second look and did not pass against C. See the [timeline entry](../TIMELINE.md).
 - R49 beat the selected Model 1 ensemble on the SKN cohort but lost on the historical official test. See both R49 records in the [experiment index](../EXPERIMENTS.md).
 - A clean re-evaluation on 6 October found the R18 learned correction matched a constant-shift control on 19 held-out pairs. This challenges earlier R18 results but is small and unresolved; see the [R18 record](../experiments/m2-r18-clean-reevaluation-2026-10-06/README.md).
+- Model 2 gains reported for drifters (observation-based current product, track-history correction) confirmed on real GPS-tracked mats off Barbados and Jamaica but not on the 2018 Puerto Rico mats or Sargassum-like suites. See the [Barbados and Jamaica record](../experiments/m2-real-mat-gps-barbados-jamaica-2026-10/README.md) and the [Sargassum suites record](../experiments/m2-track-history-sargassum-suites-2026-10-08/README.md).
 - Model 1 training is on hold and guarded validation remains blocked as of 14 October. Model 3 skill is unmeasurable without verified beach observations.
 - No model has been promoted and no serving scope changed.
 

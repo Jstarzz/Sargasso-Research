@@ -1141,6 +1141,18 @@ On four natural mat GPS tracks (2018), a wind-only windage near 0.02 beat the fr
 
 - Aggregate calibration table from the windage study summary.; Source label: `artifacts/m2_physics_cal/putman/summary.md` (private historical source; provenance only); SHA-256: `75414fe7c851fff1db1811bd45eb1e860e746e4c49afd7ddef247d376de68db8`; Source commit: `e76a017`
 
+### 2026-09-28 — Model 2 C3: higher windage on leave-one-year-out development folds
+
+**COMPLETED** · Nested (honest) leave-one-year-out development folds comparing a retrained recipe with windage 0.04 against the earlier windage 0.005 recipe and against persistence.
+
+On the 2021 and 2023 folds the higher-windage recipe improved IoU by +0.030 and +0.013 over the windage 0.005 recipe and by +0.091 and +0.093 over persistence. These are development folds. In the later disclosed second look on June to September 2026 (70 pairs), the C3 versus C difference was +0.006 with an interval spanning zero.
+
+- [Model 2 C3: higher windage on leave-one-year-out development folds](experiments/m2-c3-nested-windage-folds-2026-09-28/experiment.json)
+
+**Provenance**
+
+- Dated sprint-log entry recording the nested fold gains.; Source label: `docs/sprint_20260927.md` (private historical source; provenance only); SHA-256: `5824614df21ced9c7d3059e9d42ae8f3f606417598137bab8b78961b18d2074f`; Source commit: `14093d2`
+
 ### 2026-09-29 — Once-only June-September 2026 final check failed and its cohort was consumed
 
 **COMPLETED** · Models 2 and 3
@@ -1212,6 +1224,18 @@ In a disclosed second look, island v3 had 154, 155, 151, and 149 positives at 2,
 
 - Sanitized source index with aggregate island counts, island AUC limitation, and coastal stretch comparisons.; Source label: `artifacts/sprint_final_check/model_results_20260929.md` (private historical source; provenance only); SHA-256: `ace3af28e824aea618a1652273cb37561d2b713317c77847890e34b9c267f515`; Source commit: `202c028`
 
+### 2026-10-06 — Model 2 surface current product comparison on Caribbean drifters
+
+**COMPLETED** · Replacing the model surface current with an observation-based current product in a drift recipe, scored on 48 independent undrogued drifters in the eastern Caribbean (2,423 cases, June 2022 to August 2024); fitted arms scored on held-out drifters by 5-fold split.
+
+The observation-based current product cut trajectory miss by roughly 30 to 40% at 24, 48 and 72 h. At 48 h the median miss was 20.2 km for the product alone against 29.9 km for the model current plus 2% wind, and the mean difference was -9.7 km (interval -11.6 to -7.4). A forecast-capable form (slow part frozen before issue, wind-driven part rebuilt) kept most of the gain (48 h mean -8.4 km, interval -10.4 to -6.0, with analysis wind standing in for forecast wind). On the four Puerto Rico GPS mats the same recipe tied the existing recipe and was worse in the tail.
+
+- [Model 2 surface current product comparison on Caribbean drifters](experiments/m2-globcurrent-drifters-2026-10-06/experiment.json)
+
+**Provenance**
+
+- Headline and sections 1 to 3 of the final delivery report v9.; Source label: `artifacts/eval_loop/final_delivery_v9/report.md` (private historical source; provenance only); SHA-256: `f07759331c26755e65a26f5d40e9ef0873404583a455c1b9a07a79524b40247d`
+
 ### 2026-10-06 — Model 2 midpoint of current and wind physics: pre-registered drifter test
 
 **COMPLETED** · Parameter-free 50:50 midpoint of the current-coupled and wind-only 2 percent forecasts, scored on archived undrogued surface drifters. Drifters are an analogue, not Sargassum.
@@ -1247,6 +1271,30 @@ A clean re-evaluation on 19 held-out pairs found R18 no better than adding a con
 **Provenance**
 
 - Final delivery report v8 sections 1 to 3 and report v10 status notes.; Source label: `artifacts/eval_loop/final_delivery_v8/report.md` (private historical source; provenance only); SHA-256: `ea9e8f46301fed4cb2a19b2e6062872b790bb47b248dc09a11fae81f34a1adfd`
+
+### 2026-10-08 — Model 2 track-history correction on Caribbean drifters
+
+**COMPLETED** · Correction that hindcasts an object over its last 24 hours, measures the error, and carries a fading fraction of it forward. Needs a tracked object. Tested on undrogued surface drifters; settings chosen on one period and scored on the other.
+
+On 1,786 cases (2022-24) and 1,985 cases (2018-22), the correction cut the 48 h miss by 19.1% and 22.4% for the current-only recipe and by 21.8% and 27.4% for the wind-added recipe (intervals exclude zero), and the 120 h miss by 9% to 18%. Both directions chose the same setting: 24 h of history, 0.75 of the measured error, 4-day fade. When the history window was ended 12 h before issue to remove a possible interpolation leak, the 48 h gain fell to 11.6% to 14.8%, so 12 to 15% is a conservative floor.
+
+- [Model 2 track-history correction on Caribbean drifters](experiments/m2-track-history-drifters-2026-10-08/experiment.json)
+
+**Provenance**
+
+- Section 4 and 4b of the final delivery report v10.; Source label: `artifacts/eval_loop/final_delivery_v10/report.md` (private historical source; provenance only); SHA-256: `73ed4f09fb2cf5e38d248d53d26277fee22241c737acc6b73987db4e47380a9d`
+
+### 2026-10-08 — Model 2 track-history correction on Sargassum-like suites: not confirmed
+
+**COMPLETED** · Pre-registered test of the drifter-fitted track-history settings on three Sargassum-relevant suites: GPS-tracked mats off Puerto Rico in 2018, Sargassum-like mat drifters, and Stokes drifters.
+
+The settings did not confirm at 48 h on any of the three suites. Puerto Rico GPS mats: -2.25 km (-8%), interval -7.92 to +3.35 km (125 cases, 4 tracks). Sargassum-like mat drifters: +3.51 km (+14%, worse), interval -1.86 to +7.02 (85 cases, 8 tracks). Stokes drifters: +2.54 km (+11%, worse), interval +0.07 to +6.17 (532 cases, 14 tracks). On Puerto Rico GPS the 24 h gain was large (-4.07 km, -25%, interval -6.21 to -1.92) but was a secondary outcome on a repeatedly scored benchmark.
+
+- [Model 2 track-history correction on Sargassum-like suites: not confirmed](experiments/m2-track-history-sargassum-suites-2026-10-08/experiment.json)
+
+**Provenance**
+
+- Section 4 of the final delivery report v10, Sargassum-relevant tracks table.; Source label: `artifacts/eval_loop/final_delivery_v10/report.md` (private historical source; provenance only); SHA-256: `73ed4f09fb2cf5e38d248d53d26277fee22241c737acc6b73987db4e47380a9d`
 
 ### 2026-10-11 — Model 3: no verified beach truth, so skill cannot be measured
 
@@ -1333,3 +1381,15 @@ Baseline recorded at the start of the tuning log; B3, three-index inputs, BCE/Tv
 **Provenance**
 
 - Baseline recorded at the start of the tuning log; B3, three-index inputs, BCE/Tversky, positive weight 10, percentile normalization and 30 epochs.; Source label: `docs/tuning-log.md` (private historical source; provenance only); SHA-256: `4749574ff988a133852c44a58889c8f8373682f84cba95e76df7da87b8e63829`; Source commit: `e833e4b2164a28879b7fef8408e52c5734cc6b5e`
+
+### Undated (Registered and scored between 8 and 10 October 2026; the exact day is not recorded in the report.) — Model 2 on raw GPS trackers inside Sargassum mats (Barbados and Jamaica)
+
+**COMPLETED** · Pre-registered test on open-data hourly GPS fixes from trackers inside Sargassum mats (Fidai et al. 2023), never used before and with nothing fitted: 5 trackers off Barbados (152 cases at 48 h) and 1 tracker off Jamaica (113 cases at 48 h).
+
+The recipe beat the old baseline on real mats. Barbados untracked: 21% lower miss at 48 h (-6.50 km, interval -9.78 to -3.43; medians 26.3 vs 29.7 km). Barbados tracked: 17% lower at 24 h and 19% lower at 48 h (-7.87 to -1.13 km interval; median 24.8 to 16.8 km), on raw fixes with no interpolation leak. Jamaica, a separate single-tracker registration, confirmed all three tests: untracked -21% at 48 h, tracked -26% at 24 h and -18% at 48 h. The 6 h tracked setting on Barbados did not confirm (-10%, interval -0.87 to +0.06 km).
+
+- [Model 2 on raw GPS trackers inside Sargassum mats (Barbados and Jamaica)](experiments/m2-real-mat-gps-barbados-jamaica-2026-10/experiment.json)
+
+**Provenance**
+
+- Section 4f of the final delivery report v10.; Source label: `artifacts/eval_loop/final_delivery_v10/report.md` (private historical source; provenance only); SHA-256: `73ed4f09fb2cf5e38d248d53d26277fee22241c737acc6b73987db4e47380a9d`
